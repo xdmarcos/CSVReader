@@ -1,0 +1,2346 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		55129091D4312F58AC842A53FDF9E280 /* SwiftLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2B0940ABB653C26CBDBA04FC2D570242 /* Build configuration list for PBXAggregateTarget "SwiftLint" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = SwiftLint;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0039B3D726D42C83CAF8C5B7BEEF4422 /* Pods-CSVReader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 549F2BCDE12DD4804A6D2FF9AB8DFF79 /* Pods-CSVReader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		068BEB396E47D9884A61E3BA35AAD8D5 /* UIAutomationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D00D3EC2A93164491938085F3DB8C /* UIAutomationHelper.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0751D09055F30DC78FA469FA7BF2350B /* IOHIDEvent+KIF.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE7F124FA4E2DF13EFD602F13551C8D /* IOHIDEvent+KIF.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		07595386EC41158D8AB390CDB4683391 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FFEADA179C3FB99E6B9C777E4033B5 /* QuartzCore.framework */; };
+		0EE119DF1A3889526AB89B2A627D4FE8 /* UITableView-KIFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D36D96F142A7A0B3D3ACE8E73703B2F /* UITableView-KIFAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0F48A3294F8F1CB3E28ACC761E55918E /* NSBundle-KIFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F445FAA49EA06E43CA841CD709C889F /* NSBundle-KIFAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10B3E62036A551D7728E52521D2C1934 /* KIFTextInputTraitsOverrides.m in Sources */ = {isa = PBXBuildFile; fileRef = 5023226EB612094D76999F6F178ED212 /* KIFTextInputTraitsOverrides.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		13F14FE88BC4FF3C221C222AD6D3E337 /* Pods-CSVReaderUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5CFC23DE6FDE7635BDC4DCDE9D724D /* Pods-CSVReaderUITests-dummy.m */; };
+		1B302BB7434A4D34D93852FC2486F574 /* UIWindow-KIFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 58109356C76F1F72B7B1A58BE7CDE7B9 /* UIWindow-KIFAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C03E79F12568A672893EA0E7F39EC48 /* KIFUITestActor-IdentifierTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3099A456A234EA54B2CFA2505314145D /* KIFUITestActor-IdentifierTests.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1C807CC103D4320414F2D67AA8D3E15D /* UITableView-KIFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 644A91B722CC369B37BF7DE95B3DF0FD /* UITableView-KIFAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EF59DCE649CB17A92639DDA7B1534CE /* CAAnimation+KIFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 26C83358C37D487E8C61AE3C1B36526F /* CAAnimation+KIFAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20F3371D3341317B176F046D2B2518AE /* UIView-Debugging.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EEDA46C6888B578D6ABDCF515DAE826 /* UIView-Debugging.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2543C9FEF42C58A94DD05A3A626D09CF /* UIScrollView-KIFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E189916C8FFA320572ABF058BAE27F7A /* UIScrollView-KIFAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		266286BBB53BE5BA31409D201A31AA61 /* CGGeometry-KIFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA50E53D4757A6231D552603F103753 /* CGGeometry-KIFAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26C6BD2FEDFF48EDCB15866EE761668E /* KIFTypist.h in Headers */ = {isa = PBXBuildFile; fileRef = D51CC57AC36EEB03D6E959D5B02DAAAC /* KIFTypist.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D68668000D8F49E82199B75E8019F93 /* KIFUIViewTestActor.h in Headers */ = {isa = PBXBuildFile; fileRef = C70F652C87CED94CB196EFB014FB2B91 /* KIFUIViewTestActor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D6FE9C34321ACADA9F6D5BD6C0B337C /* NSPredicate+KIFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 89CBDF0F7DEF060F5CDBFB9CA56F212F /* NSPredicate+KIFAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		324436352F09D944674E69D53225C6CB /* UIAccessibilityElement-KIFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A4175EBED2D34BA504C8C3DDC3146254 /* UIAccessibilityElement-KIFAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		35475F662431B56D1D66BD206F2FE89F /* KIFTestActor.h in Headers */ = {isa = PBXBuildFile; fileRef = D1C8EDF07CB46062697BFD5EF9B8BD79 /* KIFTestActor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39EC939F5C789AE6E9E27DB4C27A3AB5 /* KIFSystemTestActor.h in Headers */ = {isa = PBXBuildFile; fileRef = BF8CF4691DFEC300BEB5B7D74EF4755C /* KIFSystemTestActor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BEBBCA0875A5E5C72FF741B80E576C4 /* NSError-KIFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A4E92F1E9934865127E5F900383EEB /* NSError-KIFAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		401392E283F80AE5F5C0F0210C35DCC2 /* CALayer-KIFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E198D6624C951D45DA1CD8619D5584 /* CALayer-KIFAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		421993546D34EADF9F925CFE78BFD8B6 /* NSException-KIFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AA395A051C8E36DD49CF41BE0028552 /* NSException-KIFAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		439A323C540AC905E849FADF28234CAA /* NSBundle-KIFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 964EBCFD3F5B16EC275677FAB8E4A39F /* NSBundle-KIFAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4435A7C63689E354DD35BB102D5D1277 /* XCTestCase-KIFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DB0CA3245058A2FF2D4A227F010620 /* XCTestCase-KIFAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4AEAAB56D7234B4327C671A75CB48996 /* NSFileManager-KIFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA6C06563254033869F29B0AD6A18B3 /* NSFileManager-KIFAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		53C9C870E355C1AB1098DDFD7B8D3140 /* NSString+KIFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C98A484FE5637D5F615C28780B4F34CE /* NSString+KIFAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		53DFBE153F9E9092228E37BBC1A2F1C2 /* KIF-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6469ACD567AA314DBCBCCFFC5A06BAEF /* KIF-dummy.m */; };
+		5482D9D8C7C47323622E5AA07362B798 /* KIFUITestActor-ConditionalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB54AE9748DF04A4245FBD8EFAA4EF27 /* KIFUITestActor-ConditionalTests.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		54C645E446DC5D9A69513A0AF6877636 /* KIFTestActor_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A406D56E0850401F2E3067AA541A5DD /* KIFTestActor_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5557427AC8C9852C5D098938DDC315D2 /* KIFUITestActor_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = EE011ED54A5DFBE0327AF76BBE77F5D3 /* KIFUITestActor_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		573483AEEDFECF53A62CD2F56CECFA44 /* KIF-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB9275424F637B96E0C8CE164CBE14BD /* KIF-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EEA1FE44457C338C0577B50D429C7BC /* UIApplication-KIFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E4D03BF14E324897A6ABDB5CD02448 /* UIApplication-KIFAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5EFF7BFEBEEA305EB738C916E90E36DE /* CALayer-KIFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 748BB021CA62009FFA12C4AA9C010FBC /* CALayer-KIFAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6010E9C912E2641AF9ADAA72DC2F86E7 /* UIScrollView-KIFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F6A421AB2059D46EE9C0AF0B239A7864 /* UIScrollView-KIFAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62049576A4C62F521B6E72DFECEAE2CA /* KIFTestActor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C52D5365F3627800B65887E20EE2AA1 /* KIFTestActor.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6251E2440588B7DDADE84D640DF81A27 /* UIView-KIFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF22EFA51F4E878C17FFDC065F3B85B /* UIView-KIFAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		642E1531C9336830C6AD0E98E94A8F03 /* UIScreen+KIFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 49428FFC1822699B015A0911CC38EB23 /* UIScreen+KIFAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		658C194BA66DD6277254FA2071990EDD /* LoadableCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 8523FFCC8F47094B2F1745229E547F05 /* LoadableCategory.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		695F6CB73B83F8AAE271F088719F6F64 /* UIEvent+KIFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 436DE92D74C3331CA9CE8EF656734325 /* UIEvent+KIFAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		70FA134832AD297D78E216837F416BD0 /* KIFTestStepValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = A94759DE7C447527C27F9C74185DA0CA /* KIFTestStepValidation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		743C79A9D3C882CA427A42E2FB142240 /* KIFSystemTestActor.m in Sources */ = {isa = PBXBuildFile; fileRef = A054E0F52137B304A24A2BBAA1BF9EBC /* KIFSystemTestActor.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		766762DCFBF47332410CBC0FFF4C4341 /* NSPredicate+KIFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E16878E6D1A7B77BF40721A1E8C2334 /* NSPredicate+KIFAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		76B1CCD93032DA4B19896BD8B1E1A611 /* KIFTextInputTraitsOverrides.h in Headers */ = {isa = PBXBuildFile; fileRef = AF5D9CC1B57D4D23F8752A2035C4A083 /* KIFTextInputTraitsOverrides.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76D02375B5D8E7ED1B821737D671BCBC /* XCTestCase-KIFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D89D362ACDEC27848DEEF970FE9F1B2D /* XCTestCase-KIFAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A050A2C338D495BD07C8985C65DFFC9 /* UIScreen+KIFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C7DC73259B329A65A4EADEB4B75BE707 /* UIScreen+KIFAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A638DD78DFC2493CF5BF6CB9AE7382C /* UIEvent+KIFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D245E5D32D5B6C5920C97146029BC65 /* UIEvent+KIFAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81223FBFCAA235D2F2F6F8B731D76A93 /* NSString+KIFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 447932600B72FF83384201E7C08127C0 /* NSString+KIFAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		823FB01F1C724AB5EC57508E0ADEE219 /* KIFAccessibilityEnabler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032192880980D1F1D1EC6667C725B93 /* KIFAccessibilityEnabler.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		82F75CB00CA4697F1AFA1071235900B1 /* UIAutomationHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = BA09C73D8F98214B6220073EFB43BCFD /* UIAutomationHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82FB149048E17626E95F55C49807CEDD /* UIWindow-KIFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A37DF3CC8E945029C250E3C395A8BE0 /* UIWindow-KIFAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		85CC4ED504BCC2A02CFB3F9995A00808 /* CAAnimation+KIFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 550113B5F479262C54F7E3CEF402CC99 /* CAAnimation+KIFAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		89822BA7202EAB9172E8F197D0ED12EA /* UIApplication-KIFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 65B68F2536C22C37F52D7B41F889FEC3 /* UIApplication-KIFAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DAEEDDE089D4BD9B5EF944D5924A86F /* UITouch-KIFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A63AE81D2600C85DD0F2C8075D6B722 /* UITouch-KIFAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		933EF14A219C79CD841E304743A65B43 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B58BB869510E17C63285392C94F246B /* XCTest.framework */; };
+		9537BA656B1A2602FC68728F2266787D /* KIFUIObject.h in Headers */ = {isa = PBXBuildFile; fileRef = A02697B34040E6A496995FEDE5A35C14 /* KIFUIObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		959B24E0FF160A1C703B8115F911E3AE /* UIAccessibilityElement-KIFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5357EC081CB76B207066A7D63AF1E081 /* UIAccessibilityElement-KIFAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DB662A11900474BF897FFA27AA753A4 /* KIFTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BADDBFF0E4A07C57508F68BFB94A2624 /* KIFTestCase.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9E05949F5FEF6B9D3B95512600D5E9BA /* Pods-CSVReaderUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F340FD4348CF407A26C041CA0700551A /* Pods-CSVReaderUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F2BA623CD4CF960DC411E93A942861D /* UITouch-KIFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FE07A471CD7F52C7E86F6A9ADE81ABF /* UITouch-KIFAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A519F738687C8375C2C253E742979F88 /* IOHIDEvent+KIF.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E7D98FD6A504AA90B835F2B39E52CBC /* IOHIDEvent+KIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A84713D0B0E0E3FC291A4A961B824D4B /* KIFTestStepValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = E05C4A1592F0A48D73B946AF60746208 /* KIFTestStepValidation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC9C96075C24860527AA7C43D7AC3A63 /* KIFTypist.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A56D754C1DB7C4FDD740332CF8EF0F /* KIFTypist.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B61046F10C17413B8DFE8012D794E861 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4F3AD2DAB06DCB28618818BBFE2153 /* IOKit.framework */; };
+		B876E0365321A2C730997E7E759E13B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16032CC59048C0259D3580FBCE6AE7B7 /* Foundation.framework */; };
+		B964321D59C67DDF01E90907A5CB1930 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16032CC59048C0259D3580FBCE6AE7B7 /* Foundation.framework */; };
+		B9AB64538CFD53D2E9490AC7743D1CE0 /* CGGeometry-KIFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F60AD2744BAF01B535DAD87374DB77 /* CGGeometry-KIFAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B9B50528C5D070B1F3B7815D2205C12F /* NSFileManager-KIFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A70C9653A00B7C73A122AD88D6A6AFF6 /* NSFileManager-KIFAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB4FE66D155A2C607C924E0271D8193D /* KIFTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = B98AF234C90F43A1E857B8E1EEFF8457 /* KIFTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFCE2659411381CBAEB0D0CA28C6C1F9 /* UIView-KIFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8270F78DF5C77ED5F8A0148F70C2558B /* UIView-KIFAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C3B2F0E7A420358AA971FD7D09220573 /* KIFUIObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5086E77D9E1C234329B606941B708B3B /* KIFUIObject.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C6AE850F69D8BD0F992C5FB1DC8308A7 /* Pods-CSVReader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54159EE2BC474E9DA206D3CFB7347AE9 /* Pods-CSVReader-dummy.m */; };
+		C80376AB55A03F0860F6667F8B69D659 /* KIF.h in Headers */ = {isa = PBXBuildFile; fileRef = C8B47014BEED0540236813595F63CC79 /* KIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBF4BB67A265CBCE87582938689C63F3 /* KIFUITestActor-IdentifierTests.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A60B0CF3248ED0577E9F572DB953ECA /* KIFUITestActor-IdentifierTests.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE7B24F7A959F2DDE8028A380879C589 /* KIFUITestActor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F7E82E258973E5A3E3FB79E6542F33D /* KIFUITestActor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFB525D7CF9551D7ED4818783C598219 /* KIFUITestActor.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F46B32790EB77C1F333988A30E2530 /* KIFUITestActor.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D59BA422356EEEB3C39E78CBAC45D024 /* KIFAccessibilityEnabler.h in Headers */ = {isa = PBXBuildFile; fileRef = 00BAB3CBA53DD2F6FEF48406C5E939D1 /* KIFAccessibilityEnabler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E32D8B89FEB17FB04553CECCBA74CBBD /* Pods-CSVReaderTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A979B0EBC9052BC7D512C218010930B6 /* Pods-CSVReaderTests-dummy.m */; };
+		E44600612D9B210CAC8A08467B249DB2 /* NSError-KIFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C7F95D6C8F8DA0A0AE08733A393C870 /* NSError-KIFAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E999B47493F6F06A34DAC3402B4B30C3 /* Pods-CSVReaderTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1D63043A7616584355A521FE6E28167 /* Pods-CSVReaderTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9A2898B0A2F2AD8092C29B16F94B1C3 /* KIFUIViewTestActor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1098DF8FE8932144A3B38DB84D7532CE /* KIFUIViewTestActor.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		ECBADC6E701BC9F4D0505495035E2516 /* NSException-KIFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 10975C530D0E740C8E3014B4D26C3343 /* NSException-KIFAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F372B5B2CF7001D9397FD3A55B17A51B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3296534E9C897B8DEAADBF059BB7815 /* CoreGraphics.framework */; };
+		F90EB75490772A4DC6D4E57994A8935B /* KIFUITestActor-ConditionalTests.h in Headers */ = {isa = PBXBuildFile; fileRef = 570397FE17AF076668F4412E148CBD28 /* KIFUITestActor-ConditionalTests.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB5BBACCACBA132A8DAD037FC47216FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16032CC59048C0259D3580FBCE6AE7B7 /* Foundation.framework */; };
+		FCA82CB89577558DE4E3408FE8E980C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16032CC59048C0259D3580FBCE6AE7B7 /* Foundation.framework */; };
+		FD702C7E128B6615FCDED76338674A7A /* UIView-Debugging.h in Headers */ = {isa = PBXBuildFile; fileRef = 01D7BE61233991889DBC8BC61E9928FB /* UIView-Debugging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2AA374DFEA4C33CC87175A168BD5B48B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55129091D4312F58AC842A53FDF9E280;
+			remoteInfo = SwiftLint;
+		};
+		422BEEDE1E6ED3F3C3488A3AA55C9205 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43C88F71D88854BF72D59666FC82DE8D;
+			remoteInfo = "Pods-CSVReader";
+		};
+		6FEDB06A7C682FE275E8B32A359CF9A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9571FB2344D534B6EC6B8CCEE8CBED7;
+			remoteInfo = KIF;
+		};
+		B45BBCC82596FB4C120B3DD94FA52BDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55129091D4312F58AC842A53FDF9E280;
+			remoteInfo = SwiftLint;
+		};
+		FBD76BC051ADFE0975C1F4EB8EE40057 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43C88F71D88854BF72D59666FC82DE8D;
+			remoteInfo = "Pods-CSVReader";
+		};
+		FCA9945C12EA2AD371F1B881BCEB6E78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55129091D4312F58AC842A53FDF9E280;
+			remoteInfo = SwiftLint;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		002FF03197C0EF492E7D54FC36694758 /* Pods-CSVReaderUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CSVReaderUITests-frameworks.sh"; sourceTree = "<group>"; };
+		00BAB3CBA53DD2F6FEF48406C5E939D1 /* KIFAccessibilityEnabler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KIFAccessibilityEnabler.h; path = Classes/KIFAccessibilityEnabler.h; sourceTree = "<group>"; };
+		01D7BE61233991889DBC8BC61E9928FB /* UIView-Debugging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView-Debugging.h"; path = "Additions/UIView-Debugging.h"; sourceTree = "<group>"; };
+		04506FE704DD69F0DD4DB2F26D1CFAC4 /* Pods-CSVReaderTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CSVReaderTests.modulemap"; sourceTree = "<group>"; };
+		07FFB9679885070EC73131E13B947582 /* KIF-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KIF-prefix.pch"; sourceTree = "<group>"; };
+		08338FFAEA61D8ADA2ACF3A65B4D084B /* Pods-CSVReaderUITests.release_stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CSVReaderUITests.release_stage.xcconfig"; sourceTree = "<group>"; };
+		0A37DF3CC8E945029C250E3C395A8BE0 /* UIWindow-KIFAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWindow-KIFAdditions.m"; path = "Additions/UIWindow-KIFAdditions.m"; sourceTree = "<group>"; };
+		0A6D00D3EC2A93164491938085F3DB8C /* UIAutomationHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIAutomationHelper.m; path = Classes/UIAutomationHelper.m; sourceTree = "<group>"; };
+		0C4F3AD2DAB06DCB28618818BBFE2153 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
+		0D36D96F142A7A0B3D3ACE8E73703B2F /* UITableView-KIFAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView-KIFAdditions.m"; path = "Additions/UITableView-KIFAdditions.m"; sourceTree = "<group>"; };
+		0E7D98FD6A504AA90B835F2B39E52CBC /* IOHIDEvent+KIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IOHIDEvent+KIF.h"; path = "Classes/IOHIDEvent+KIF.h"; sourceTree = "<group>"; };
+		10975C530D0E740C8E3014B4D26C3343 /* NSException-KIFAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSException-KIFAdditions.m"; path = "Additions/NSException-KIFAdditions.m"; sourceTree = "<group>"; };
+		1098DF8FE8932144A3B38DB84D7532CE /* KIFUIViewTestActor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KIFUIViewTestActor.m; path = Classes/KIFUIViewTestActor.m; sourceTree = "<group>"; };
+		11A56D754C1DB7C4FDD740332CF8EF0F /* KIFTypist.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KIFTypist.m; path = Classes/KIFTypist.m; sourceTree = "<group>"; };
+		16032CC59048C0259D3580FBCE6AE7B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1AA395A051C8E36DD49CF41BE0028552 /* NSException-KIFAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSException-KIFAdditions.h"; path = "Additions/NSException-KIFAdditions.h"; sourceTree = "<group>"; };
+		1B97FFDFE890DF3A0AE787E6058378AC /* Pods-CSVReaderUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CSVReaderUITests-Info.plist"; sourceTree = "<group>"; };
+		201114D1A8A0FD1258E1ACD0F213D273 /* Pods-CSVReaderTests.debug_stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CSVReaderTests.debug_stage.xcconfig"; sourceTree = "<group>"; };
+		26C83358C37D487E8C61AE3C1B36526F /* CAAnimation+KIFAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CAAnimation+KIFAdditions.h"; path = "Additions/CAAnimation+KIFAdditions.h"; sourceTree = "<group>"; };
+		2A60B0CF3248ED0577E9F572DB953ECA /* KIFUITestActor-IdentifierTests.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "KIFUITestActor-IdentifierTests.h"; path = "IdentifierTests/KIFUITestActor-IdentifierTests.h"; sourceTree = "<group>"; };
+		2BA50E53D4757A6231D552603F103753 /* CGGeometry-KIFAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CGGeometry-KIFAdditions.h"; path = "Additions/CGGeometry-KIFAdditions.h"; sourceTree = "<group>"; };
+		3099A456A234EA54B2CFA2505314145D /* KIFUITestActor-IdentifierTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "KIFUITestActor-IdentifierTests.m"; path = "IdentifierTests/KIFUITestActor-IdentifierTests.m"; sourceTree = "<group>"; };
+		33051908DB7079EA1F7FE25BB6FEB956 /* SwiftLint.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.xcconfig; sourceTree = "<group>"; };
+		33A4E92F1E9934865127E5F900383EEB /* NSError-KIFAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSError-KIFAdditions.m"; path = "Additions/NSError-KIFAdditions.m"; sourceTree = "<group>"; };
+		37C7ACC6C8682AFD4298AFEE3E23A06A /* KIF-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KIF-Info.plist"; sourceTree = "<group>"; };
+		37E4D03BF14E324897A6ABDB5CD02448 /* UIApplication-KIFAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication-KIFAdditions.m"; path = "Additions/UIApplication-KIFAdditions.m"; sourceTree = "<group>"; };
+		3D1600E2A5FD2D7C903F5B3EB13E9AC3 /* Pods-CSVReaderTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CSVReaderTests-Info.plist"; sourceTree = "<group>"; };
+		4032192880980D1F1D1EC6667C725B93 /* KIFAccessibilityEnabler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KIFAccessibilityEnabler.m; path = Classes/KIFAccessibilityEnabler.m; sourceTree = "<group>"; };
+		40F46B32790EB77C1F333988A30E2530 /* KIFUITestActor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KIFUITestActor.m; path = Classes/KIFUITestActor.m; sourceTree = "<group>"; };
+		436DE92D74C3331CA9CE8EF656734325 /* UIEvent+KIFAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIEvent+KIFAdditions.m"; path = "Additions/UIEvent+KIFAdditions.m"; sourceTree = "<group>"; };
+		447932600B72FF83384201E7C08127C0 /* NSString+KIFAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+KIFAdditions.h"; path = "Additions/NSString+KIFAdditions.h"; sourceTree = "<group>"; };
+		49428FFC1822699B015A0911CC38EB23 /* UIScreen+KIFAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScreen+KIFAdditions.m"; path = "Additions/UIScreen+KIFAdditions.m"; sourceTree = "<group>"; };
+		4D9FF8A1BFEBD6F11F2F99955DA0B21E /* Pods-CSVReaderUITests.debug_stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CSVReaderUITests.debug_stage.xcconfig"; sourceTree = "<group>"; };
+		4F9D85EC0A0394E8D2DD8FAEDA21DD5D /* Pods-CSVReader-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CSVReader-Info.plist"; sourceTree = "<group>"; };
+		4FE07A471CD7F52C7E86F6A9ADE81ABF /* UITouch-KIFAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITouch-KIFAdditions.h"; path = "Additions/UITouch-KIFAdditions.h"; sourceTree = "<group>"; };
+		500291BCB40280B2BD9E1A07D7F90E9E /* Pods-CSVReader-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CSVReader-acknowledgements.plist"; sourceTree = "<group>"; };
+		5023226EB612094D76999F6F178ED212 /* KIFTextInputTraitsOverrides.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KIFTextInputTraitsOverrides.m; path = Classes/KIFTextInputTraitsOverrides.m; sourceTree = "<group>"; };
+		5086E77D9E1C234329B606941B708B3B /* KIFUIObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KIFUIObject.m; path = Classes/KIFUIObject.m; sourceTree = "<group>"; };
+		5298A7F08A854395E343233E2A68DC01 /* Pods-CSVReaderTests.release_prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CSVReaderTests.release_prod.xcconfig"; sourceTree = "<group>"; };
+		5357EC081CB76B207066A7D63AF1E081 /* UIAccessibilityElement-KIFAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAccessibilityElement-KIFAdditions.h"; path = "Additions/UIAccessibilityElement-KIFAdditions.h"; sourceTree = "<group>"; };
+		54159EE2BC474E9DA206D3CFB7347AE9 /* Pods-CSVReader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CSVReader-dummy.m"; sourceTree = "<group>"; };
+		549F2BCDE12DD4804A6D2FF9AB8DFF79 /* Pods-CSVReader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CSVReader-umbrella.h"; sourceTree = "<group>"; };
+		550113B5F479262C54F7E3CEF402CC99 /* CAAnimation+KIFAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CAAnimation+KIFAdditions.m"; path = "Additions/CAAnimation+KIFAdditions.m"; sourceTree = "<group>"; };
+		570397FE17AF076668F4412E148CBD28 /* KIFUITestActor-ConditionalTests.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "KIFUITestActor-ConditionalTests.h"; path = "Classes/KIFUITestActor-ConditionalTests.h"; sourceTree = "<group>"; };
+		57F92F7964DCBDFE4B300A12EBB18ABF /* Pods-CSVReader.debug_prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CSVReader.debug_prod.xcconfig"; sourceTree = "<group>"; };
+		58109356C76F1F72B7B1A58BE7CDE7B9 /* UIWindow-KIFAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWindow-KIFAdditions.h"; path = "Additions/UIWindow-KIFAdditions.h"; sourceTree = "<group>"; };
+		59E198D6624C951D45DA1CD8619D5584 /* CALayer-KIFAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer-KIFAdditions.m"; path = "Additions/CALayer-KIFAdditions.m"; sourceTree = "<group>"; };
+		5ED0E788F6B46E1FF0C63A08E09E23E7 /* KIF.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KIF.xcconfig; sourceTree = "<group>"; };
+		5EEDA46C6888B578D6ABDCF515DAE826 /* UIView-Debugging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView-Debugging.m"; path = "Additions/UIView-Debugging.m"; sourceTree = "<group>"; };
+		644A91B722CC369B37BF7DE95B3DF0FD /* UITableView-KIFAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView-KIFAdditions.h"; path = "Additions/UITableView-KIFAdditions.h"; sourceTree = "<group>"; };
+		6469ACD567AA314DBCBCCFFC5A06BAEF /* KIF-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KIF-dummy.m"; sourceTree = "<group>"; };
+		65B68F2536C22C37F52D7B41F889FEC3 /* UIApplication-KIFAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication-KIFAdditions.h"; path = "Additions/UIApplication-KIFAdditions.h"; sourceTree = "<group>"; };
+		6A63AE81D2600C85DD0F2C8075D6B722 /* UITouch-KIFAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITouch-KIFAdditions.m"; path = "Additions/UITouch-KIFAdditions.m"; sourceTree = "<group>"; };
+		6E16878E6D1A7B77BF40721A1E8C2334 /* NSPredicate+KIFAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSPredicate+KIFAdditions.m"; path = "Additions/NSPredicate+KIFAdditions.m"; sourceTree = "<group>"; };
+		7054F040B5FEC384E70173DDBD75F4D3 /* Pods-CSVReader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CSVReader.modulemap"; sourceTree = "<group>"; };
+		70E6C6A39FC9D11573090D01A5DDC4AA /* Pods-CSVReaderUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CSVReaderUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		744F8E463CB7B3F821928FA5A12D8BEB /* Pods-CSVReader.debug_stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CSVReader.debug_stage.xcconfig"; sourceTree = "<group>"; };
+		7450274BE929E42EC5DE81D6E1894530 /* Pods-CSVReaderUITests.release_prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CSVReaderUITests.release_prod.xcconfig"; sourceTree = "<group>"; };
+		748BB021CA62009FFA12C4AA9C010FBC /* CALayer-KIFAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer-KIFAdditions.h"; path = "Additions/CALayer-KIFAdditions.h"; sourceTree = "<group>"; };
+		7B0261758A55A566B1E20F73CAD8CD5C /* Pods-CSVReader.release_stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CSVReader.release_stage.xcconfig"; sourceTree = "<group>"; };
+		7E11B690EE223835054621BEA2B07EBB /* KIF.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KIF.modulemap; sourceTree = "<group>"; };
+		7F445FAA49EA06E43CA841CD709C889F /* NSBundle-KIFAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle-KIFAdditions.h"; path = "Additions/NSBundle-KIFAdditions.h"; sourceTree = "<group>"; };
+		7FA6C06563254033869F29B0AD6A18B3 /* NSFileManager-KIFAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager-KIFAdditions.m"; path = "Additions/NSFileManager-KIFAdditions.m"; sourceTree = "<group>"; };
+		8270F78DF5C77ED5F8A0148F70C2558B /* UIView-KIFAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView-KIFAdditions.m"; path = "Additions/UIView-KIFAdditions.m"; sourceTree = "<group>"; };
+		82FFEADA179C3FB99E6B9C777E4033B5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		8523FFCC8F47094B2F1745229E547F05 /* LoadableCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LoadableCategory.h; path = Additions/LoadableCategory.h; sourceTree = "<group>"; };
+		8859EDAD29AF5282B97FFE48857E1BE3 /* Pods-CSVReaderTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CSVReaderTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		89CBDF0F7DEF060F5CDBFB9CA56F212F /* NSPredicate+KIFAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSPredicate+KIFAdditions.h"; path = "Additions/NSPredicate+KIFAdditions.h"; sourceTree = "<group>"; };
+		8D245E5D32D5B6C5920C97146029BC65 /* UIEvent+KIFAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIEvent+KIFAdditions.h"; path = "Additions/UIEvent+KIFAdditions.h"; sourceTree = "<group>"; };
+		8E98FACDE927E57D00D07DF8E0C6A67B /* Pods-CSVReaderUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CSVReaderUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9238CDE3235490C35E75F7FA09279C9A /* Pods-CSVReaderUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CSVReaderUITests.modulemap"; sourceTree = "<group>"; };
+		95DB0CA3245058A2FF2D4A227F010620 /* XCTestCase-KIFAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XCTestCase-KIFAdditions.m"; path = "Additions/XCTestCase-KIFAdditions.m"; sourceTree = "<group>"; };
+		964EBCFD3F5B16EC275677FAB8E4A39F /* NSBundle-KIFAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle-KIFAdditions.m"; path = "Additions/NSBundle-KIFAdditions.m"; sourceTree = "<group>"; };
+		9666244429152F037865C906969A6E41 /* Pods-CSVReaderTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CSVReaderTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9A406D56E0850401F2E3067AA541A5DD /* KIFTestActor_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KIFTestActor_Private.h; path = Classes/KIFTestActor_Private.h; sourceTree = "<group>"; };
+		9B58BB869510E17C63285392C94F246B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9C52D5365F3627800B65887E20EE2AA1 /* KIFTestActor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KIFTestActor.m; path = Classes/KIFTestActor.m; sourceTree = "<group>"; };
+		9C7F95D6C8F8DA0A0AE08733A393C870 /* NSError-KIFAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSError-KIFAdditions.h"; path = "Additions/NSError-KIFAdditions.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F7E82E258973E5A3E3FB79E6542F33D /* KIFUITestActor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KIFUITestActor.h; path = Classes/KIFUITestActor.h; sourceTree = "<group>"; };
+		A02697B34040E6A496995FEDE5A35C14 /* KIFUIObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KIFUIObject.h; path = Classes/KIFUIObject.h; sourceTree = "<group>"; };
+		A054E0F52137B304A24A2BBAA1BF9EBC /* KIFSystemTestActor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KIFSystemTestActor.m; path = Classes/KIFSystemTestActor.m; sourceTree = "<group>"; };
+		A4175EBED2D34BA504C8C3DDC3146254 /* UIAccessibilityElement-KIFAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAccessibilityElement-KIFAdditions.m"; path = "Additions/UIAccessibilityElement-KIFAdditions.m"; sourceTree = "<group>"; };
+		A70C9653A00B7C73A122AD88D6A6AFF6 /* NSFileManager-KIFAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSFileManager-KIFAdditions.h"; path = "Additions/NSFileManager-KIFAdditions.h"; sourceTree = "<group>"; };
+		A94759DE7C447527C27F9C74185DA0CA /* KIFTestStepValidation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KIFTestStepValidation.m; path = Classes/KIFTestStepValidation.m; sourceTree = "<group>"; };
+		A979B0EBC9052BC7D512C218010930B6 /* Pods-CSVReaderTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CSVReaderTests-dummy.m"; sourceTree = "<group>"; };
+		ABE7F124FA4E2DF13EFD602F13551C8D /* IOHIDEvent+KIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IOHIDEvent+KIF.m"; path = "Classes/IOHIDEvent+KIF.m"; sourceTree = "<group>"; };
+		AF5D9CC1B57D4D23F8752A2035C4A083 /* KIFTextInputTraitsOverrides.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KIFTextInputTraitsOverrides.h; path = Classes/KIFTextInputTraitsOverrides.h; sourceTree = "<group>"; };
+		AFF22EFA51F4E878C17FFDC065F3B85B /* UIView-KIFAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView-KIFAdditions.h"; path = "Additions/UIView-KIFAdditions.h"; sourceTree = "<group>"; };
+		B98AF234C90F43A1E857B8E1EEFF8457 /* KIFTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KIFTestCase.h; path = Classes/KIFTestCase.h; sourceTree = "<group>"; };
+		BA09C73D8F98214B6220073EFB43BCFD /* UIAutomationHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIAutomationHelper.h; path = Classes/UIAutomationHelper.h; sourceTree = "<group>"; };
+		BADDBFF0E4A07C57508F68BFB94A2624 /* KIFTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KIFTestCase.m; path = Classes/KIFTestCase.m; sourceTree = "<group>"; };
+		BDB01DC3BCE9861E1D4DF379BE6CA325 /* Pods-CSVReader-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CSVReader-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BF8CF4691DFEC300BEB5B7D74EF4755C /* KIFSystemTestActor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KIFSystemTestActor.h; path = Classes/KIFSystemTestActor.h; sourceTree = "<group>"; };
+		C70F652C87CED94CB196EFB014FB2B91 /* KIFUIViewTestActor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KIFUIViewTestActor.h; path = Classes/KIFUIViewTestActor.h; sourceTree = "<group>"; };
+		C7DC73259B329A65A4EADEB4B75BE707 /* UIScreen+KIFAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScreen+KIFAdditions.h"; path = "Additions/UIScreen+KIFAdditions.h"; sourceTree = "<group>"; };
+		C8B47014BEED0540236813595F63CC79 /* KIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KIF.h; path = Classes/KIF.h; sourceTree = "<group>"; };
+		C98A484FE5637D5F615C28780B4F34CE /* NSString+KIFAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+KIFAdditions.m"; path = "Additions/NSString+KIFAdditions.m"; sourceTree = "<group>"; };
+		CE5CFC23DE6FDE7635BDC4DCDE9D724D /* Pods-CSVReaderUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CSVReaderUITests-dummy.m"; sourceTree = "<group>"; };
+		CEA9FDBA4FCD3FFB354AAEAF1EA4A234 /* KIF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KIF.framework; path = KIF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1C8EDF07CB46062697BFD5EF9B8BD79 /* KIFTestActor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KIFTestActor.h; path = Classes/KIFTestActor.h; sourceTree = "<group>"; };
+		D1D63043A7616584355A521FE6E28167 /* Pods-CSVReaderTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CSVReaderTests-umbrella.h"; sourceTree = "<group>"; };
+		D3296534E9C897B8DEAADBF059BB7815 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		D51CC57AC36EEB03D6E959D5B02DAAAC /* KIFTypist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KIFTypist.h; path = Classes/KIFTypist.h; sourceTree = "<group>"; };
+		D63B938C4581795D4F7DD8E72CC30417 /* Pods_CSVReaderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CSVReaderTests.framework; path = "Pods-CSVReaderTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D89D362ACDEC27848DEEF970FE9F1B2D /* XCTestCase-KIFAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTestCase-KIFAdditions.h"; path = "Additions/XCTestCase-KIFAdditions.h"; sourceTree = "<group>"; };
+		DB9275424F637B96E0C8CE164CBE14BD /* KIF-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KIF-umbrella.h"; sourceTree = "<group>"; };
+		DC967822213315DCE337CEFDCE4E97B4 /* Pods-CSVReaderTests.debug_prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CSVReaderTests.debug_prod.xcconfig"; sourceTree = "<group>"; };
+		DF1EDA8BAA6C863883C2E0E81F6EC7FD /* Pods-CSVReader.release_prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CSVReader.release_prod.xcconfig"; sourceTree = "<group>"; };
+		E05C4A1592F0A48D73B946AF60746208 /* KIFTestStepValidation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KIFTestStepValidation.h; path = Classes/KIFTestStepValidation.h; sourceTree = "<group>"; };
+		E189916C8FFA320572ABF058BAE27F7A /* UIScrollView-KIFAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView-KIFAdditions.m"; path = "Additions/UIScrollView-KIFAdditions.m"; sourceTree = "<group>"; };
+		EE011ED54A5DFBE0327AF76BBE77F5D3 /* KIFUITestActor_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KIFUITestActor_Private.h; path = Classes/KIFUITestActor_Private.h; sourceTree = "<group>"; };
+		F022EF2213E9D8247CEC143074655C4E /* Pods-CSVReaderUITests.debug_prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CSVReaderUITests.debug_prod.xcconfig"; sourceTree = "<group>"; };
+		F340FD4348CF407A26C041CA0700551A /* Pods-CSVReaderUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CSVReaderUITests-umbrella.h"; sourceTree = "<group>"; };
+		F5F60AD2744BAF01B535DAD87374DB77 /* CGGeometry-KIFAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CGGeometry-KIFAdditions.m"; path = "Additions/CGGeometry-KIFAdditions.m"; sourceTree = "<group>"; };
+		F6A421AB2059D46EE9C0AF0B239A7864 /* UIScrollView-KIFAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView-KIFAdditions.h"; path = "Additions/UIScrollView-KIFAdditions.h"; sourceTree = "<group>"; };
+		F8065C3E8BCC2123049EB5602F778400 /* Pods-CSVReaderTests.release_stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CSVReaderTests.release_stage.xcconfig"; sourceTree = "<group>"; };
+		FAE285E66399CC5EFF7471F9C3C11E78 /* Pods_CSVReaderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CSVReaderUITests.framework; path = "Pods-CSVReaderUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB54AE9748DF04A4245FBD8EFAA4EF27 /* KIFUITestActor-ConditionalTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "KIFUITestActor-ConditionalTests.m"; path = "Classes/KIFUITestActor-ConditionalTests.m"; sourceTree = "<group>"; };
+		FDCD2CDC572648AE356BB4171AC502FA /* Pods_CSVReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CSVReader.framework; path = "Pods-CSVReader.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63F562CE239C4F8B73CF576D2BF2E2F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCA82CB89577558DE4E3408FE8E980C3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEBE1C8803672B4A0105BE5F770414EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F372B5B2CF7001D9397FD3A55B17A51B /* CoreGraphics.framework in Frameworks */,
+				B964321D59C67DDF01E90907A5CB1930 /* Foundation.framework in Frameworks */,
+				B61046F10C17413B8DFE8012D794E861 /* IOKit.framework in Frameworks */,
+				07595386EC41158D8AB390CDB4683391 /* QuartzCore.framework in Frameworks */,
+				933EF14A219C79CD841E304743A65B43 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3DFEEC33FEB2ADC3FCF89E858B8E5BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB5BBACCACBA132A8DAD037FC47216FB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4C18ACECBC9A9896570BC7E34B1067F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B876E0365321A2C730997E7E759E13B8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1382222072795C7D22F547B5101DB991 /* Pods-CSVReaderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9238CDE3235490C35E75F7FA09279C9A /* Pods-CSVReaderUITests.modulemap */,
+				70E6C6A39FC9D11573090D01A5DDC4AA /* Pods-CSVReaderUITests-acknowledgements.markdown */,
+				8E98FACDE927E57D00D07DF8E0C6A67B /* Pods-CSVReaderUITests-acknowledgements.plist */,
+				CE5CFC23DE6FDE7635BDC4DCDE9D724D /* Pods-CSVReaderUITests-dummy.m */,
+				002FF03197C0EF492E7D54FC36694758 /* Pods-CSVReaderUITests-frameworks.sh */,
+				1B97FFDFE890DF3A0AE787E6058378AC /* Pods-CSVReaderUITests-Info.plist */,
+				F340FD4348CF407A26C041CA0700551A /* Pods-CSVReaderUITests-umbrella.h */,
+				F022EF2213E9D8247CEC143074655C4E /* Pods-CSVReaderUITests.debug_prod.xcconfig */,
+				4D9FF8A1BFEBD6F11F2F99955DA0B21E /* Pods-CSVReaderUITests.debug_stage.xcconfig */,
+				7450274BE929E42EC5DE81D6E1894530 /* Pods-CSVReaderUITests.release_prod.xcconfig */,
+				08338FFAEA61D8ADA2ACF3A65B4D084B /* Pods-CSVReaderUITests.release_stage.xcconfig */,
+			);
+			name = "Pods-CSVReaderUITests";
+			path = "Target Support Files/Pods-CSVReaderUITests";
+			sourceTree = "<group>";
+		};
+		429B0F6DA2ADF0C8EC9F7DA38CB9851B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D3296534E9C897B8DEAADBF059BB7815 /* CoreGraphics.framework */,
+				16032CC59048C0259D3580FBCE6AE7B7 /* Foundation.framework */,
+				0C4F3AD2DAB06DCB28618818BBFE2153 /* IOKit.framework */,
+				82FFEADA179C3FB99E6B9C777E4033B5 /* QuartzCore.framework */,
+				9B58BB869510E17C63285392C94F246B /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4A576FA4EA2B60066F67216598D3565F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E11B690EE223835054621BEA2B07EBB /* KIF.modulemap */,
+				5ED0E788F6B46E1FF0C63A08E09E23E7 /* KIF.xcconfig */,
+				6469ACD567AA314DBCBCCFFC5A06BAEF /* KIF-dummy.m */,
+				37C7ACC6C8682AFD4298AFEE3E23A06A /* KIF-Info.plist */,
+				07FFB9679885070EC73131E13B947582 /* KIF-prefix.pch */,
+				DB9275424F637B96E0C8CE164CBE14BD /* KIF-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KIF";
+			sourceTree = "<group>";
+		};
+		4E8DEAC8D982BD4B9B8A591BB483D084 /* Pods-CSVReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				04506FE704DD69F0DD4DB2F26D1CFAC4 /* Pods-CSVReaderTests.modulemap */,
+				8859EDAD29AF5282B97FFE48857E1BE3 /* Pods-CSVReaderTests-acknowledgements.markdown */,
+				9666244429152F037865C906969A6E41 /* Pods-CSVReaderTests-acknowledgements.plist */,
+				A979B0EBC9052BC7D512C218010930B6 /* Pods-CSVReaderTests-dummy.m */,
+				3D1600E2A5FD2D7C903F5B3EB13E9AC3 /* Pods-CSVReaderTests-Info.plist */,
+				D1D63043A7616584355A521FE6E28167 /* Pods-CSVReaderTests-umbrella.h */,
+				DC967822213315DCE337CEFDCE4E97B4 /* Pods-CSVReaderTests.debug_prod.xcconfig */,
+				201114D1A8A0FD1258E1ACD0F213D273 /* Pods-CSVReaderTests.debug_stage.xcconfig */,
+				5298A7F08A854395E343233E2A68DC01 /* Pods-CSVReaderTests.release_prod.xcconfig */,
+				F8065C3E8BCC2123049EB5602F778400 /* Pods-CSVReaderTests.release_stage.xcconfig */,
+			);
+			name = "Pods-CSVReaderTests";
+			path = "Target Support Files/Pods-CSVReaderTests";
+			sourceTree = "<group>";
+		};
+		6C1895E0812EC2ECB6B3125C1EF84F81 /* Pods-CSVReader */ = {
+			isa = PBXGroup;
+			children = (
+				7054F040B5FEC384E70173DDBD75F4D3 /* Pods-CSVReader.modulemap */,
+				BDB01DC3BCE9861E1D4DF379BE6CA325 /* Pods-CSVReader-acknowledgements.markdown */,
+				500291BCB40280B2BD9E1A07D7F90E9E /* Pods-CSVReader-acknowledgements.plist */,
+				54159EE2BC474E9DA206D3CFB7347AE9 /* Pods-CSVReader-dummy.m */,
+				4F9D85EC0A0394E8D2DD8FAEDA21DD5D /* Pods-CSVReader-Info.plist */,
+				549F2BCDE12DD4804A6D2FF9AB8DFF79 /* Pods-CSVReader-umbrella.h */,
+				57F92F7964DCBDFE4B300A12EBB18ABF /* Pods-CSVReader.debug_prod.xcconfig */,
+				744F8E463CB7B3F821928FA5A12D8BEB /* Pods-CSVReader.debug_stage.xcconfig */,
+				DF1EDA8BAA6C863883C2E0E81F6EC7FD /* Pods-CSVReader.release_prod.xcconfig */,
+				7B0261758A55A566B1E20F73CAD8CD5C /* Pods-CSVReader.release_stage.xcconfig */,
+			);
+			name = "Pods-CSVReader";
+			path = "Target Support Files/Pods-CSVReader";
+			sourceTree = "<group>";
+		};
+		817A90AF02862F407E598E7EF76463B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEA9FDBA4FCD3FFB354AAEAF1EA4A234 /* KIF.framework */,
+				FDCD2CDC572648AE356BB4171AC502FA /* Pods_CSVReader.framework */,
+				D63B938C4581795D4F7DD8E72CC30417 /* Pods_CSVReaderTests.framework */,
+				FAE285E66399CC5EFF7471F9C3C11E78 /* Pods_CSVReaderUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8801B4E47B3ABA9810C68955626F8D7A /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+				95F8F15C787A89610D125888F3ABE695 /* Support Files */,
+			);
+			name = SwiftLint;
+			path = SwiftLint;
+			sourceTree = "<group>";
+		};
+		94532A9045CE788A5EB1CA09F3E71547 /* IdentifierTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A60B0CF3248ED0577E9F572DB953ECA /* KIFUITestActor-IdentifierTests.h */,
+				3099A456A234EA54B2CFA2505314145D /* KIFUITestActor-IdentifierTests.m */,
+			);
+			name = IdentifierTests;
+			sourceTree = "<group>";
+		};
+		95F8F15C787A89610D125888F3ABE695 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				33051908DB7079EA1F7FE25BB6FEB956 /* SwiftLint.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
+			sourceTree = "<group>";
+		};
+		A655422504C6DDF4DD0A5F7DD971DCA6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C1895E0812EC2ECB6B3125C1EF84F81 /* Pods-CSVReader */,
+				4E8DEAC8D982BD4B9B8A591BB483D084 /* Pods-CSVReaderTests */,
+				1382222072795C7D22F547B5101DB991 /* Pods-CSVReaderUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B94D7768568A9992200DB461E8CF687F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				429B0F6DA2ADF0C8EC9F7DA38CB9851B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6C0BC5E870BB0B3BD91CCFF66DF3CEF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF841A7EA05A0922BD9EDB525299C610 /* KIF */,
+				8801B4E47B3ABA9810C68955626F8D7A /* SwiftLint */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				B94D7768568A9992200DB461E8CF687F /* Frameworks */,
+				C6C0BC5E870BB0B3BD91CCFF66DF3CEF /* Pods */,
+				817A90AF02862F407E598E7EF76463B0 /* Products */,
+				A655422504C6DDF4DD0A5F7DD971DCA6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CF841A7EA05A0922BD9EDB525299C610 /* KIF */ = {
+			isa = PBXGroup;
+			children = (
+				EDFFAF56916095E581BFD282C9858269 /* Core */,
+				94532A9045CE788A5EB1CA09F3E71547 /* IdentifierTests */,
+				4A576FA4EA2B60066F67216598D3565F /* Support Files */,
+			);
+			name = KIF;
+			path = KIF;
+			sourceTree = "<group>";
+		};
+		EDFFAF56916095E581BFD282C9858269 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				26C83358C37D487E8C61AE3C1B36526F /* CAAnimation+KIFAdditions.h */,
+				550113B5F479262C54F7E3CEF402CC99 /* CAAnimation+KIFAdditions.m */,
+				748BB021CA62009FFA12C4AA9C010FBC /* CALayer-KIFAdditions.h */,
+				59E198D6624C951D45DA1CD8619D5584 /* CALayer-KIFAdditions.m */,
+				2BA50E53D4757A6231D552603F103753 /* CGGeometry-KIFAdditions.h */,
+				F5F60AD2744BAF01B535DAD87374DB77 /* CGGeometry-KIFAdditions.m */,
+				0E7D98FD6A504AA90B835F2B39E52CBC /* IOHIDEvent+KIF.h */,
+				ABE7F124FA4E2DF13EFD602F13551C8D /* IOHIDEvent+KIF.m */,
+				C8B47014BEED0540236813595F63CC79 /* KIF.h */,
+				00BAB3CBA53DD2F6FEF48406C5E939D1 /* KIFAccessibilityEnabler.h */,
+				4032192880980D1F1D1EC6667C725B93 /* KIFAccessibilityEnabler.m */,
+				BF8CF4691DFEC300BEB5B7D74EF4755C /* KIFSystemTestActor.h */,
+				A054E0F52137B304A24A2BBAA1BF9EBC /* KIFSystemTestActor.m */,
+				D1C8EDF07CB46062697BFD5EF9B8BD79 /* KIFTestActor.h */,
+				9C52D5365F3627800B65887E20EE2AA1 /* KIFTestActor.m */,
+				9A406D56E0850401F2E3067AA541A5DD /* KIFTestActor_Private.h */,
+				B98AF234C90F43A1E857B8E1EEFF8457 /* KIFTestCase.h */,
+				BADDBFF0E4A07C57508F68BFB94A2624 /* KIFTestCase.m */,
+				E05C4A1592F0A48D73B946AF60746208 /* KIFTestStepValidation.h */,
+				A94759DE7C447527C27F9C74185DA0CA /* KIFTestStepValidation.m */,
+				AF5D9CC1B57D4D23F8752A2035C4A083 /* KIFTextInputTraitsOverrides.h */,
+				5023226EB612094D76999F6F178ED212 /* KIFTextInputTraitsOverrides.m */,
+				D51CC57AC36EEB03D6E959D5B02DAAAC /* KIFTypist.h */,
+				11A56D754C1DB7C4FDD740332CF8EF0F /* KIFTypist.m */,
+				A02697B34040E6A496995FEDE5A35C14 /* KIFUIObject.h */,
+				5086E77D9E1C234329B606941B708B3B /* KIFUIObject.m */,
+				9F7E82E258973E5A3E3FB79E6542F33D /* KIFUITestActor.h */,
+				40F46B32790EB77C1F333988A30E2530 /* KIFUITestActor.m */,
+				570397FE17AF076668F4412E148CBD28 /* KIFUITestActor-ConditionalTests.h */,
+				FB54AE9748DF04A4245FBD8EFAA4EF27 /* KIFUITestActor-ConditionalTests.m */,
+				EE011ED54A5DFBE0327AF76BBE77F5D3 /* KIFUITestActor_Private.h */,
+				C70F652C87CED94CB196EFB014FB2B91 /* KIFUIViewTestActor.h */,
+				1098DF8FE8932144A3B38DB84D7532CE /* KIFUIViewTestActor.m */,
+				8523FFCC8F47094B2F1745229E547F05 /* LoadableCategory.h */,
+				7F445FAA49EA06E43CA841CD709C889F /* NSBundle-KIFAdditions.h */,
+				964EBCFD3F5B16EC275677FAB8E4A39F /* NSBundle-KIFAdditions.m */,
+				9C7F95D6C8F8DA0A0AE08733A393C870 /* NSError-KIFAdditions.h */,
+				33A4E92F1E9934865127E5F900383EEB /* NSError-KIFAdditions.m */,
+				1AA395A051C8E36DD49CF41BE0028552 /* NSException-KIFAdditions.h */,
+				10975C530D0E740C8E3014B4D26C3343 /* NSException-KIFAdditions.m */,
+				A70C9653A00B7C73A122AD88D6A6AFF6 /* NSFileManager-KIFAdditions.h */,
+				7FA6C06563254033869F29B0AD6A18B3 /* NSFileManager-KIFAdditions.m */,
+				89CBDF0F7DEF060F5CDBFB9CA56F212F /* NSPredicate+KIFAdditions.h */,
+				6E16878E6D1A7B77BF40721A1E8C2334 /* NSPredicate+KIFAdditions.m */,
+				447932600B72FF83384201E7C08127C0 /* NSString+KIFAdditions.h */,
+				C98A484FE5637D5F615C28780B4F34CE /* NSString+KIFAdditions.m */,
+				5357EC081CB76B207066A7D63AF1E081 /* UIAccessibilityElement-KIFAdditions.h */,
+				A4175EBED2D34BA504C8C3DDC3146254 /* UIAccessibilityElement-KIFAdditions.m */,
+				65B68F2536C22C37F52D7B41F889FEC3 /* UIApplication-KIFAdditions.h */,
+				37E4D03BF14E324897A6ABDB5CD02448 /* UIApplication-KIFAdditions.m */,
+				BA09C73D8F98214B6220073EFB43BCFD /* UIAutomationHelper.h */,
+				0A6D00D3EC2A93164491938085F3DB8C /* UIAutomationHelper.m */,
+				8D245E5D32D5B6C5920C97146029BC65 /* UIEvent+KIFAdditions.h */,
+				436DE92D74C3331CA9CE8EF656734325 /* UIEvent+KIFAdditions.m */,
+				C7DC73259B329A65A4EADEB4B75BE707 /* UIScreen+KIFAdditions.h */,
+				49428FFC1822699B015A0911CC38EB23 /* UIScreen+KIFAdditions.m */,
+				F6A421AB2059D46EE9C0AF0B239A7864 /* UIScrollView-KIFAdditions.h */,
+				E189916C8FFA320572ABF058BAE27F7A /* UIScrollView-KIFAdditions.m */,
+				644A91B722CC369B37BF7DE95B3DF0FD /* UITableView-KIFAdditions.h */,
+				0D36D96F142A7A0B3D3ACE8E73703B2F /* UITableView-KIFAdditions.m */,
+				4FE07A471CD7F52C7E86F6A9ADE81ABF /* UITouch-KIFAdditions.h */,
+				6A63AE81D2600C85DD0F2C8075D6B722 /* UITouch-KIFAdditions.m */,
+				01D7BE61233991889DBC8BC61E9928FB /* UIView-Debugging.h */,
+				5EEDA46C6888B578D6ABDCF515DAE826 /* UIView-Debugging.m */,
+				AFF22EFA51F4E878C17FFDC065F3B85B /* UIView-KIFAdditions.h */,
+				8270F78DF5C77ED5F8A0148F70C2558B /* UIView-KIFAdditions.m */,
+				58109356C76F1F72B7B1A58BE7CDE7B9 /* UIWindow-KIFAdditions.h */,
+				0A37DF3CC8E945029C250E3C395A8BE0 /* UIWindow-KIFAdditions.m */,
+				D89D362ACDEC27848DEEF970FE9F1B2D /* XCTestCase-KIFAdditions.h */,
+				95DB0CA3245058A2FF2D4A227F010620 /* XCTestCase-KIFAdditions.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		55E04AB31CDA03F0791EA1350F12FBC7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EF59DCE649CB17A92639DDA7B1534CE /* CAAnimation+KIFAdditions.h in Headers */,
+				5EFF7BFEBEEA305EB738C916E90E36DE /* CALayer-KIFAdditions.h in Headers */,
+				266286BBB53BE5BA31409D201A31AA61 /* CGGeometry-KIFAdditions.h in Headers */,
+				A519F738687C8375C2C253E742979F88 /* IOHIDEvent+KIF.h in Headers */,
+				573483AEEDFECF53A62CD2F56CECFA44 /* KIF-umbrella.h in Headers */,
+				C80376AB55A03F0860F6667F8B69D659 /* KIF.h in Headers */,
+				D59BA422356EEEB3C39E78CBAC45D024 /* KIFAccessibilityEnabler.h in Headers */,
+				39EC939F5C789AE6E9E27DB4C27A3AB5 /* KIFSystemTestActor.h in Headers */,
+				35475F662431B56D1D66BD206F2FE89F /* KIFTestActor.h in Headers */,
+				54C645E446DC5D9A69513A0AF6877636 /* KIFTestActor_Private.h in Headers */,
+				BB4FE66D155A2C607C924E0271D8193D /* KIFTestCase.h in Headers */,
+				A84713D0B0E0E3FC291A4A961B824D4B /* KIFTestStepValidation.h in Headers */,
+				76B1CCD93032DA4B19896BD8B1E1A611 /* KIFTextInputTraitsOverrides.h in Headers */,
+				26C6BD2FEDFF48EDCB15866EE761668E /* KIFTypist.h in Headers */,
+				9537BA656B1A2602FC68728F2266787D /* KIFUIObject.h in Headers */,
+				F90EB75490772A4DC6D4E57994A8935B /* KIFUITestActor-ConditionalTests.h in Headers */,
+				CBF4BB67A265CBCE87582938689C63F3 /* KIFUITestActor-IdentifierTests.h in Headers */,
+				CE7B24F7A959F2DDE8028A380879C589 /* KIFUITestActor.h in Headers */,
+				5557427AC8C9852C5D098938DDC315D2 /* KIFUITestActor_Private.h in Headers */,
+				2D68668000D8F49E82199B75E8019F93 /* KIFUIViewTestActor.h in Headers */,
+				658C194BA66DD6277254FA2071990EDD /* LoadableCategory.h in Headers */,
+				0F48A3294F8F1CB3E28ACC761E55918E /* NSBundle-KIFAdditions.h in Headers */,
+				E44600612D9B210CAC8A08467B249DB2 /* NSError-KIFAdditions.h in Headers */,
+				421993546D34EADF9F925CFE78BFD8B6 /* NSException-KIFAdditions.h in Headers */,
+				B9B50528C5D070B1F3B7815D2205C12F /* NSFileManager-KIFAdditions.h in Headers */,
+				2D6FE9C34321ACADA9F6D5BD6C0B337C /* NSPredicate+KIFAdditions.h in Headers */,
+				81223FBFCAA235D2F2F6F8B731D76A93 /* NSString+KIFAdditions.h in Headers */,
+				959B24E0FF160A1C703B8115F911E3AE /* UIAccessibilityElement-KIFAdditions.h in Headers */,
+				89822BA7202EAB9172E8F197D0ED12EA /* UIApplication-KIFAdditions.h in Headers */,
+				82F75CB00CA4697F1AFA1071235900B1 /* UIAutomationHelper.h in Headers */,
+				7A638DD78DFC2493CF5BF6CB9AE7382C /* UIEvent+KIFAdditions.h in Headers */,
+				7A050A2C338D495BD07C8985C65DFFC9 /* UIScreen+KIFAdditions.h in Headers */,
+				6010E9C912E2641AF9ADAA72DC2F86E7 /* UIScrollView-KIFAdditions.h in Headers */,
+				1C807CC103D4320414F2D67AA8D3E15D /* UITableView-KIFAdditions.h in Headers */,
+				9F2BA623CD4CF960DC411E93A942861D /* UITouch-KIFAdditions.h in Headers */,
+				FD702C7E128B6615FCDED76338674A7A /* UIView-Debugging.h in Headers */,
+				6251E2440588B7DDADE84D640DF81A27 /* UIView-KIFAdditions.h in Headers */,
+				1B302BB7434A4D34D93852FC2486F574 /* UIWindow-KIFAdditions.h in Headers */,
+				76D02375B5D8E7ED1B821737D671BCBC /* XCTestCase-KIFAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FCE76E2BF7EB88A98DC6B61B0E09178 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E05949F5FEF6B9D3B95512600D5E9BA /* Pods-CSVReaderUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8663555FB0CD25E9FDA5BE8A36FB1AE8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0039B3D726D42C83CAF8C5B7BEEF4422 /* Pods-CSVReader-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9127BABAE9E5D4077C58CA00C9729284 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E999B47493F6F06A34DAC3402B4B30C3 /* Pods-CSVReaderTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		41604AD8231D0651E00B156FAC78643B /* Pods-CSVReaderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92D89B7D57E69D6EDBFD357BACAB70DE /* Build configuration list for PBXNativeTarget "Pods-CSVReaderUITests" */;
+			buildPhases = (
+				6FCE76E2BF7EB88A98DC6B61B0E09178 /* Headers */,
+				1FEC1697A0AE233F7498D615F5B9CA43 /* Sources */,
+				C3DFEEC33FEB2ADC3FCF89E858B8E5BF /* Frameworks */,
+				C61BBAD20ABFC04DBA7CED0D1FE35C0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55CE227EA66FB32102425A1480131D48 /* PBXTargetDependency */,
+				CE3AD2A994FA9995784CB10037CE50BA /* PBXTargetDependency */,
+				A80ACFBB1344E80CA9AB67DA361054E1 /* PBXTargetDependency */,
+			);
+			name = "Pods-CSVReaderUITests";
+			productName = "Pods-CSVReaderUITests";
+			productReference = FAE285E66399CC5EFF7471F9C3C11E78 /* Pods_CSVReaderUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		43C88F71D88854BF72D59666FC82DE8D /* Pods-CSVReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11AEB6B456A3C41F4C8E5FC0572E38ED /* Build configuration list for PBXNativeTarget "Pods-CSVReader" */;
+			buildPhases = (
+				8663555FB0CD25E9FDA5BE8A36FB1AE8 /* Headers */,
+				A6390B2C4F8288D8A3CD03F24636B005 /* Sources */,
+				63F562CE239C4F8B73CF576D2BF2E2F4 /* Frameworks */,
+				F2488433002DE699B0190676A53BD2C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D4BFB82ED1653D728A30DDD42725225 /* PBXTargetDependency */,
+			);
+			name = "Pods-CSVReader";
+			productName = "Pods-CSVReader";
+			productReference = FDCD2CDC572648AE356BB4171AC502FA /* Pods_CSVReader.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A9571FB2344D534B6EC6B8CCEE8CBED7 /* KIF */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74B4B15EBA64D0BA319B045D0EB0020F /* Build configuration list for PBXNativeTarget "KIF" */;
+			buildPhases = (
+				55E04AB31CDA03F0791EA1350F12FBC7 /* Headers */,
+				24985AF320DE1FE54401D760A27DFFED /* Sources */,
+				AEBE1C8803672B4A0105BE5F770414EC /* Frameworks */,
+				E2451364D45784B52E1B55D046E2BC21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KIF;
+			productName = KIF;
+			productReference = CEA9FDBA4FCD3FFB354AAEAF1EA4A234 /* KIF.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E1506623EAA7D7CF82729BC7CE36C92F /* Pods-CSVReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17EEC655C64BC9F6665640F2093B6AAB /* Build configuration list for PBXNativeTarget "Pods-CSVReaderTests" */;
+			buildPhases = (
+				9127BABAE9E5D4077C58CA00C9729284 /* Headers */,
+				CB7BC6344D8D789A99E2C4B30A33CD73 /* Sources */,
+				C4C18ACECBC9A9896570BC7E34B1067F /* Frameworks */,
+				ABC72C3EC3D9989E248BB7DD7F2AAEAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D348E6EDBFBB5445407289290DEB830F /* PBXTargetDependency */,
+				1DE15713D7B0B8C2CD3480EF14256BBF /* PBXTargetDependency */,
+			);
+			name = "Pods-CSVReaderTests";
+			productName = "Pods-CSVReaderTests";
+			productReference = D63B938C4581795D4F7DD8E72CC30417 /* Pods_CSVReaderTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 817A90AF02862F407E598E7EF76463B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9571FB2344D534B6EC6B8CCEE8CBED7 /* KIF */,
+				43C88F71D88854BF72D59666FC82DE8D /* Pods-CSVReader */,
+				E1506623EAA7D7CF82729BC7CE36C92F /* Pods-CSVReaderTests */,
+				41604AD8231D0651E00B156FAC78643B /* Pods-CSVReaderUITests */,
+				55129091D4312F58AC842A53FDF9E280 /* SwiftLint */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABC72C3EC3D9989E248BB7DD7F2AAEAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C61BBAD20ABFC04DBA7CED0D1FE35C0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2451364D45784B52E1B55D046E2BC21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2488433002DE699B0190676A53BD2C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FEC1697A0AE233F7498D615F5B9CA43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13F14FE88BC4FF3C221C222AD6D3E337 /* Pods-CSVReaderUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24985AF320DE1FE54401D760A27DFFED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85CC4ED504BCC2A02CFB3F9995A00808 /* CAAnimation+KIFAdditions.m in Sources */,
+				401392E283F80AE5F5C0F0210C35DCC2 /* CALayer-KIFAdditions.m in Sources */,
+				B9AB64538CFD53D2E9490AC7743D1CE0 /* CGGeometry-KIFAdditions.m in Sources */,
+				0751D09055F30DC78FA469FA7BF2350B /* IOHIDEvent+KIF.m in Sources */,
+				53DFBE153F9E9092228E37BBC1A2F1C2 /* KIF-dummy.m in Sources */,
+				823FB01F1C724AB5EC57508E0ADEE219 /* KIFAccessibilityEnabler.m in Sources */,
+				743C79A9D3C882CA427A42E2FB142240 /* KIFSystemTestActor.m in Sources */,
+				62049576A4C62F521B6E72DFECEAE2CA /* KIFTestActor.m in Sources */,
+				9DB662A11900474BF897FFA27AA753A4 /* KIFTestCase.m in Sources */,
+				70FA134832AD297D78E216837F416BD0 /* KIFTestStepValidation.m in Sources */,
+				10B3E62036A551D7728E52521D2C1934 /* KIFTextInputTraitsOverrides.m in Sources */,
+				AC9C96075C24860527AA7C43D7AC3A63 /* KIFTypist.m in Sources */,
+				C3B2F0E7A420358AA971FD7D09220573 /* KIFUIObject.m in Sources */,
+				5482D9D8C7C47323622E5AA07362B798 /* KIFUITestActor-ConditionalTests.m in Sources */,
+				1C03E79F12568A672893EA0E7F39EC48 /* KIFUITestActor-IdentifierTests.m in Sources */,
+				CFB525D7CF9551D7ED4818783C598219 /* KIFUITestActor.m in Sources */,
+				E9A2898B0A2F2AD8092C29B16F94B1C3 /* KIFUIViewTestActor.m in Sources */,
+				439A323C540AC905E849FADF28234CAA /* NSBundle-KIFAdditions.m in Sources */,
+				3BEBBCA0875A5E5C72FF741B80E576C4 /* NSError-KIFAdditions.m in Sources */,
+				ECBADC6E701BC9F4D0505495035E2516 /* NSException-KIFAdditions.m in Sources */,
+				4AEAAB56D7234B4327C671A75CB48996 /* NSFileManager-KIFAdditions.m in Sources */,
+				766762DCFBF47332410CBC0FFF4C4341 /* NSPredicate+KIFAdditions.m in Sources */,
+				53C9C870E355C1AB1098DDFD7B8D3140 /* NSString+KIFAdditions.m in Sources */,
+				324436352F09D944674E69D53225C6CB /* UIAccessibilityElement-KIFAdditions.m in Sources */,
+				5EEA1FE44457C338C0577B50D429C7BC /* UIApplication-KIFAdditions.m in Sources */,
+				068BEB396E47D9884A61E3BA35AAD8D5 /* UIAutomationHelper.m in Sources */,
+				695F6CB73B83F8AAE271F088719F6F64 /* UIEvent+KIFAdditions.m in Sources */,
+				642E1531C9336830C6AD0E98E94A8F03 /* UIScreen+KIFAdditions.m in Sources */,
+				2543C9FEF42C58A94DD05A3A626D09CF /* UIScrollView-KIFAdditions.m in Sources */,
+				0EE119DF1A3889526AB89B2A627D4FE8 /* UITableView-KIFAdditions.m in Sources */,
+				8DAEEDDE089D4BD9B5EF944D5924A86F /* UITouch-KIFAdditions.m in Sources */,
+				20F3371D3341317B176F046D2B2518AE /* UIView-Debugging.m in Sources */,
+				BFCE2659411381CBAEB0D0CA28C6C1F9 /* UIView-KIFAdditions.m in Sources */,
+				82FB149048E17626E95F55C49807CEDD /* UIWindow-KIFAdditions.m in Sources */,
+				4435A7C63689E354DD35BB102D5D1277 /* XCTestCase-KIFAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6390B2C4F8288D8A3CD03F24636B005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6AE850F69D8BD0F992C5FB1DC8308A7 /* Pods-CSVReader-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB7BC6344D8D789A99E2C4B30A33CD73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E32D8B89FEB17FB04553CECCBA74CBBD /* Pods-CSVReaderTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D4BFB82ED1653D728A30DDD42725225 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 55129091D4312F58AC842A53FDF9E280 /* SwiftLint */;
+			targetProxy = FCA9945C12EA2AD371F1B881BCEB6E78 /* PBXContainerItemProxy */;
+		};
+		1DE15713D7B0B8C2CD3480EF14256BBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 55129091D4312F58AC842A53FDF9E280 /* SwiftLint */;
+			targetProxy = 2AA374DFEA4C33CC87175A168BD5B48B /* PBXContainerItemProxy */;
+		};
+		55CE227EA66FB32102425A1480131D48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KIF;
+			target = A9571FB2344D534B6EC6B8CCEE8CBED7 /* KIF */;
+			targetProxy = 6FEDB06A7C682FE275E8B32A359CF9A9 /* PBXContainerItemProxy */;
+		};
+		A80ACFBB1344E80CA9AB67DA361054E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 55129091D4312F58AC842A53FDF9E280 /* SwiftLint */;
+			targetProxy = B45BBCC82596FB4C120B3DD94FA52BDA /* PBXContainerItemProxy */;
+		};
+		CE3AD2A994FA9995784CB10037CE50BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CSVReader";
+			target = 43C88F71D88854BF72D59666FC82DE8D /* Pods-CSVReader */;
+			targetProxy = FBD76BC051ADFE0975C1F4EB8EE40057 /* PBXContainerItemProxy */;
+		};
+		D348E6EDBFBB5445407289290DEB830F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CSVReader";
+			target = 43C88F71D88854BF72D59666FC82DE8D /* Pods-CSVReader */;
+			targetProxy = 422BEEDE1E6ED3F3C3488A3AA55C9205 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		041FD3B46A21D2A2FBB96B1A8F2A1466 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		07F7398FA56E12200ED53E42DE45DF54 /* Debug_PROD */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F022EF2213E9D8247CEC143074655C4E /* Pods-CSVReaderUITests.debug_prod.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CSVReaderUITests/Pods-CSVReaderUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CSVReaderUITests/Pods-CSVReaderUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug_PROD;
+		};
+		082F555F371F5815D118421E708A4BDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CSVReaderTests/Pods-CSVReaderTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CSVReaderTests/Pods-CSVReaderTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		13985A87AEF518EC0D1D7ECFA2FD3B2A /* Debug_STAGE */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 201114D1A8A0FD1258E1ACD0F213D273 /* Pods-CSVReaderTests.debug_stage.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CSVReaderTests/Pods-CSVReaderTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CSVReaderTests/Pods-CSVReaderTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug_STAGE;
+		};
+		1C4FC357682045DE3BCBB06E40D284EA /* Debug_PROD */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG_PROD=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug_PROD;
+		};
+		1D316F28374F386981020AF04E185685 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33051908DB7079EA1F7FE25BB6FEB956 /* SwiftLint.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D8280961E61AA39C57AB723E2634D8F /* Debug_PROD */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57F92F7964DCBDFE4B300A12EBB18ABF /* Pods-CSVReader.debug_prod.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CSVReader/Pods-CSVReader-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CSVReader/Pods-CSVReader.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug_PROD;
+		};
+		26DD6BD2730F69951382D425D4AAB52F /* Debug_STAGE */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ED0E788F6B46E1FF0C63A08E09E23E7 /* KIF.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KIF/KIF-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KIF/KIF-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KIF/KIF.modulemap";
+				PRODUCT_MODULE_NAME = KIF;
+				PRODUCT_NAME = KIF;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug_STAGE;
+		};
+		27AA7EC68AE3AFECD619807CA43E7B17 /* Release_PROD */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33051908DB7079EA1F7FE25BB6FEB956 /* SwiftLint.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release_PROD;
+		};
+		331366C0F591639D356F0E5439DD7D2D /* Debug_STAGE */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D9FF8A1BFEBD6F11F2F99955DA0B21E /* Pods-CSVReaderUITests.debug_stage.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CSVReaderUITests/Pods-CSVReaderUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CSVReaderUITests/Pods-CSVReaderUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug_STAGE;
+		};
+		3361ED7C22CB275F9B56FCFF2986C586 /* Release_PROD */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF1EDA8BAA6C863883C2E0E81F6EC7FD /* Pods-CSVReader.release_prod.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CSVReader/Pods-CSVReader-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CSVReader/Pods-CSVReader.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release_PROD;
+		};
+		392B654D2A2647056973763000ACBC11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CSVReader/Pods-CSVReader-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CSVReader/Pods-CSVReader.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3D2C3A7F9CB0C7AD4FBEA3657F104047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		436CD99DCB047FF1494ECDA58C16B244 /* Release_PROD */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE_PROD=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release_PROD;
+		};
+		451BC5A8CB3647F864EA6C373ECD93EC /* Release_STAGE */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ED0E788F6B46E1FF0C63A08E09E23E7 /* KIF.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KIF/KIF-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KIF/KIF-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KIF/KIF.modulemap";
+				PRODUCT_MODULE_NAME = KIF;
+				PRODUCT_NAME = KIF;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release_STAGE;
+		};
+		54F6C4624509CEF3BED60108C695039E /* Debug_PROD */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33051908DB7079EA1F7FE25BB6FEB956 /* SwiftLint.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Debug_PROD;
+		};
+		6393E27176C9B73193A5F0527A9A28A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CSVReaderUITests/Pods-CSVReaderUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CSVReaderUITests/Pods-CSVReaderUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		72520BF5CE6ACB8E80CCAA91E01346DB /* Release_STAGE */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8065C3E8BCC2123049EB5602F778400 /* Pods-CSVReaderTests.release_stage.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CSVReaderTests/Pods-CSVReaderTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CSVReaderTests/Pods-CSVReaderTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release_STAGE;
+		};
+		79044250D54141652D0DAD958A18EE4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CSVReaderUITests/Pods-CSVReaderUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CSVReaderUITests/Pods-CSVReaderUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		793845149A156F1F619B25AE792D09F2 /* Release_PROD */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5298A7F08A854395E343233E2A68DC01 /* Pods-CSVReaderTests.release_prod.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CSVReaderTests/Pods-CSVReaderTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CSVReaderTests/Pods-CSVReaderTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release_PROD;
+		};
+		8E3BD661EE699EA70B99E41D86CA82CD /* Release_STAGE */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B0261758A55A566B1E20F73CAD8CD5C /* Pods-CSVReader.release_stage.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CSVReader/Pods-CSVReader-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CSVReader/Pods-CSVReader.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release_STAGE;
+		};
+		907B55175F7ED73426705FB69311FA52 /* Debug_STAGE */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33051908DB7079EA1F7FE25BB6FEB956 /* SwiftLint.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Debug_STAGE;
+		};
+		98FCDC66D0AEC3B734DCE9D8687319BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CSVReaderTests/Pods-CSVReaderTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CSVReaderTests/Pods-CSVReaderTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A6E6BD2E82DF19A7207259B68D07F305 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CSVReader/Pods-CSVReader-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CSVReader/Pods-CSVReader.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A90E6980A495D72A86AC37211B052C0E /* Release_STAGE */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE_STAGE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release_STAGE;
+		};
+		ABD5D390BEBEA30CC545F54B0603E5B2 /* Debug_STAGE */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 744F8E463CB7B3F821928FA5A12D8BEB /* Pods-CSVReader.debug_stage.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CSVReader/Pods-CSVReader-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CSVReader/Pods-CSVReader.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug_STAGE;
+		};
+		AC23094419D30E8DF3DCD990DD9EA2FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ED0E788F6B46E1FF0C63A08E09E23E7 /* KIF.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KIF/KIF-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KIF/KIF-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KIF/KIF.modulemap";
+				PRODUCT_MODULE_NAME = KIF;
+				PRODUCT_NAME = KIF;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B4645735C8363012A3F38A8072357648 /* Release_PROD */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ED0E788F6B46E1FF0C63A08E09E23E7 /* KIF.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KIF/KIF-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KIF/KIF-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KIF/KIF.modulemap";
+				PRODUCT_MODULE_NAME = KIF;
+				PRODUCT_NAME = KIF;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release_PROD;
+		};
+		CD68850AACBEF633DCFDE448B3BB0F21 /* Release_PROD */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7450274BE929E42EC5DE81D6E1894530 /* Pods-CSVReaderUITests.release_prod.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CSVReaderUITests/Pods-CSVReaderUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CSVReaderUITests/Pods-CSVReaderUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release_PROD;
+		};
+		D1393D68675D85C7ECDFAAA668229FE6 /* Debug_PROD */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ED0E788F6B46E1FF0C63A08E09E23E7 /* KIF.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KIF/KIF-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KIF/KIF-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KIF/KIF.modulemap";
+				PRODUCT_MODULE_NAME = KIF;
+				PRODUCT_NAME = KIF;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug_PROD;
+		};
+		D1E3A7E6978E1CC0B1A143FA95698176 /* Release_STAGE */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08338FFAEA61D8ADA2ACF3A65B4D084B /* Pods-CSVReaderUITests.release_stage.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CSVReaderUITests/Pods-CSVReaderUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CSVReaderUITests/Pods-CSVReaderUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release_STAGE;
+		};
+		E0A2320C976D7FA85F5077769BEB8FF6 /* Debug_STAGE */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG_STAGE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug_STAGE;
+		};
+		E111D8577DF4FC074218F1DAFC29E34F /* Debug_PROD */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC967822213315DCE337CEFDCE4E97B4 /* Pods-CSVReaderTests.debug_prod.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CSVReaderTests/Pods-CSVReaderTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CSVReaderTests/Pods-CSVReaderTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug_PROD;
+		};
+		EBD5DF3A9A2C107EFC50B8616477CDFC /* Release_STAGE */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33051908DB7079EA1F7FE25BB6FEB956 /* SwiftLint.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release_STAGE;
+		};
+		F5815AB549D6D4E5AE1E5132E8273313 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33051908DB7079EA1F7FE25BB6FEB956 /* SwiftLint.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB0EDB1AF9C4F2F2862012F82E7335FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ED0E788F6B46E1FF0C63A08E09E23E7 /* KIF.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KIF/KIF-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KIF/KIF-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KIF/KIF.modulemap";
+				PRODUCT_MODULE_NAME = KIF;
+				PRODUCT_NAME = KIF;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11AEB6B456A3C41F4C8E5FC0572E38ED /* Build configuration list for PBXNativeTarget "Pods-CSVReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6E6BD2E82DF19A7207259B68D07F305 /* Debug */,
+				1D8280961E61AA39C57AB723E2634D8F /* Debug_PROD */,
+				ABD5D390BEBEA30CC545F54B0603E5B2 /* Debug_STAGE */,
+				392B654D2A2647056973763000ACBC11 /* Release */,
+				3361ED7C22CB275F9B56FCFF2986C586 /* Release_PROD */,
+				8E3BD661EE699EA70B99E41D86CA82CD /* Release_STAGE */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17EEC655C64BC9F6665640F2093B6AAB /* Build configuration list for PBXNativeTarget "Pods-CSVReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				082F555F371F5815D118421E708A4BDF /* Debug */,
+				E111D8577DF4FC074218F1DAFC29E34F /* Debug_PROD */,
+				13985A87AEF518EC0D1D7ECFA2FD3B2A /* Debug_STAGE */,
+				98FCDC66D0AEC3B734DCE9D8687319BD /* Release */,
+				793845149A156F1F619B25AE792D09F2 /* Release_PROD */,
+				72520BF5CE6ACB8E80CCAA91E01346DB /* Release_STAGE */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B0940ABB653C26CBDBA04FC2D570242 /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D316F28374F386981020AF04E185685 /* Debug */,
+				54F6C4624509CEF3BED60108C695039E /* Debug_PROD */,
+				907B55175F7ED73426705FB69311FA52 /* Debug_STAGE */,
+				F5815AB549D6D4E5AE1E5132E8273313 /* Release */,
+				27AA7EC68AE3AFECD619807CA43E7B17 /* Release_PROD */,
+				EBD5DF3A9A2C107EFC50B8616477CDFC /* Release_STAGE */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D2C3A7F9CB0C7AD4FBEA3657F104047 /* Debug */,
+				1C4FC357682045DE3BCBB06E40D284EA /* Debug_PROD */,
+				E0A2320C976D7FA85F5077769BEB8FF6 /* Debug_STAGE */,
+				041FD3B46A21D2A2FBB96B1A8F2A1466 /* Release */,
+				436CD99DCB047FF1494ECDA58C16B244 /* Release_PROD */,
+				A90E6980A495D72A86AC37211B052C0E /* Release_STAGE */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74B4B15EBA64D0BA319B045D0EB0020F /* Build configuration list for PBXNativeTarget "KIF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB0EDB1AF9C4F2F2862012F82E7335FF /* Debug */,
+				D1393D68675D85C7ECDFAAA668229FE6 /* Debug_PROD */,
+				26DD6BD2730F69951382D425D4AAB52F /* Debug_STAGE */,
+				AC23094419D30E8DF3DCD990DD9EA2FD /* Release */,
+				B4645735C8363012A3F38A8072357648 /* Release_PROD */,
+				451BC5A8CB3647F864EA6C373ECD93EC /* Release_STAGE */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92D89B7D57E69D6EDBFD357BACAB70DE /* Build configuration list for PBXNativeTarget "Pods-CSVReaderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79044250D54141652D0DAD958A18EE4C /* Debug */,
+				07F7398FA56E12200ED53E42DE45DF54 /* Debug_PROD */,
+				331366C0F591639D356F0E5439DD7D2D /* Debug_STAGE */,
+				6393E27176C9B73193A5F0527A9A28A1 /* Release */,
+				CD68850AACBEF633DCFDE448B3BB0F21 /* Release_PROD */,
+				D1E3A7E6978E1CC0B1A143FA95698176 /* Release_STAGE */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

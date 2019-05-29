@@ -1,0 +1,25 @@
+PODS:
+  - KIF (3.7.7):
+    - KIF/Core (= 3.7.7)
+  - KIF/Core (3.7.7)
+  - KIF/IdentifierTests (3.7.7):
+    - KIF/Core
+  - SwiftLint (0.32.0)
+
+DEPENDENCIES:
+  - KIF
+  - KIF/IdentifierTests
+  - SwiftLint
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - KIF
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  KIF: 6f525b18d4cca3d6445f3c5d683294e9157bd3f4
+  SwiftLint: 009a898ef2a1c851f45e1b59349bf6ff2ddc990d
+
+PODFILE CHECKSUM: eab230599e7133ec1b22dfc8ab9787274e1d6375
+
+COCOAPODS: 1.6.1
