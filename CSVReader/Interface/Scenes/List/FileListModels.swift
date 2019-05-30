@@ -16,12 +16,13 @@ enum FileList {
         }
 
         struct Response {
+            let files: [String]
         }
 
         struct ViewModel {
             let screenTitle: String
             let numberOfSections = 1
-            let datasource: [String]
+            let datasource: [File]
         }
     }
 }

@@ -21,6 +21,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
 
+        changeNavigationBarAppearance()
+
         return true
+    }
+
+    // MARK: Private
+    private func changeNavigationBarAppearance() {
+
+        let navigationBarAppearace = UINavigationBar.appearance()
+        navigationBarAppearace.tintColor = .appWhite
+        navigationBarAppearace.barStyle = .black
+        navigationBarAppearace.isTranslucent = false
+        navigationBarAppearace.backgroundColor = .appBlack
+        navigationBarAppearace.barTintColor = .appBlack
+        navigationBarAppearace.largeTitleTextAttributes = [NSAttributedString.Key.font: UIFont.largeTitlesFont()]
     }
 }

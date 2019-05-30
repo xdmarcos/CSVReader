@@ -13,15 +13,14 @@ class FileDetailTableViewCell: UITableViewCell {
     private struct ViewTraits {
 
         // Margins
-        static let sideMargin: CGFloat = 10.0
-        static let innerMargin: CGFloat = 15.0
+        static let cellMargins = UIEdgeInsets(top: 15.0, left: 10.0, bottom: 15.0, right: 10.0)
+        static let innerMargin: CGFloat = 10.0
         static let vMargin: CGFloat = 5.0
 
-        // Width
-        static let wrapperWidth: CGFloat = 150.0
+        //Size
+        static let labelWidth: CGFloat = 130.0
 
         // Font size
-        static let fontBig: CGFloat = 20.0
         static let fontMedium: CGFloat = 16.0
         static let fontSmall: CGFloat = 12.0
     }
@@ -29,50 +28,90 @@ class FileDetailTableViewCell: UITableViewCell {
     enum Accessibility {
 
         struct Label {
-            static var titleLabel = "titleLabel"
-            static var symbolLabel = "symbolLabel"
-            static var valueLabel = "valueLabel"
+            static var nameLabel = "nameLabel"
+            static var nameValueLabel = "nameValueLabel"
+            static var surnameLabel = "surnameLabel"
+            static var surnameValueLabel = "surnameValueLabel"
+            static var countLabel = "countLabel"
+            static var countValueLabel = "countValueLabel"
+            static var dobLabel = "dobLabel"
+            static var dobValueLabel = "dobValueLabel"
         }
     }
 
-    let titleLabel: UILabel
-    let symbolLabel: UILabel
-    let valueLabel: UILabel
-    private let nameWrapper: UIView
+    let nameLabel: UILabel
+    let nameValueLabel: UILabel
+    let surnameLabel: UILabel
+    let surnameValueLabel: UILabel
+    let countLabel: UILabel
+    let countValueLabel: UILabel
+    let dobLabel: UILabel
+    let dobValueLabel: UILabel
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
 
-        //titleLabel
-        titleLabel = UILabel()
-        titleLabel.font = UIFont.boldSystemFont(ofSize: ViewTraits.fontBig)
-        titleLabel.textColor = .appDarkGray
-        titleLabel.accessibilityLabel = Accessibility.Label.titleLabel
+        //nameLabel
+        nameLabel = UILabel()
+        nameLabel.font = UIFont.appBoldFont(ofSize: ViewTraits.fontMedium)
+        nameLabel.textColor = .appWhite
+        nameLabel.accessibilityIdentifier = Accessibility.Label.nameLabel
 
-        //symbolLabel
-        symbolLabel = UILabel()
-        symbolLabel.font = UIFont.boldSystemFont(ofSize: ViewTraits.fontSmall)
-        symbolLabel.textColor = .appDarkGray
-        symbolLabel.accessibilityLabel = Accessibility.Label.symbolLabel
+        //nameValueLabel
+        nameValueLabel = UILabel()
+        nameValueLabel.font = UIFont.appFont(ofSize: ViewTraits.fontMedium)
+        nameValueLabel.textColor = .appLightGray
+        nameValueLabel.accessibilityIdentifier = Accessibility.Label.nameLabel
 
-        //valueLabel
-        valueLabel = UILabel()
-        valueLabel.font = UIFont.systemFont(ofSize: ViewTraits.fontMedium)
-        valueLabel.textColor = .appDarkGray
-        valueLabel.textAlignment = .right
-        valueLabel.accessibilityLabel = Accessibility.Label.valueLabel
+        //surnameLabel
+        surnameLabel = UILabel()
+        surnameLabel.font = UIFont.appBoldFont(ofSize: ViewTraits.fontMedium)
+        surnameLabel.textColor = .appWhite
+        surnameLabel.accessibilityIdentifier = Accessibility.Label.nameLabel
 
-        //nameWrapper
-        nameWrapper = UIView()
+        //surnameValueLabel
+        surnameValueLabel = UILabel()
+        surnameValueLabel.font = UIFont.appFont(ofSize: ViewTraits.fontMedium)
+        surnameValueLabel.textColor = .appLightGray
+        surnameValueLabel.accessibilityIdentifier = Accessibility.Label.nameLabel
+
+        //countLabel
+        countLabel = UILabel()
+        countLabel.font = UIFont.appBoldFont(ofSize: ViewTraits.fontMedium)
+        countLabel.textColor = .appWhite
+        countLabel.accessibilityIdentifier = Accessibility.Label.nameLabel
+
+        //countValueLabel
+        countValueLabel = UILabel()
+        countValueLabel.font = UIFont.appFont(ofSize: ViewTraits.fontMedium)
+        countValueLabel.textColor = .appLightGray
+        countValueLabel.accessibilityIdentifier = Accessibility.Label.nameLabel
+
+        //dobLabel
+        dobLabel = UILabel()
+        dobLabel.font = UIFont.appBoldFont(ofSize: ViewTraits.fontMedium)
+        dobLabel.textColor = .appWhite
+        dobLabel.accessibilityIdentifier = Accessibility.Label.nameLabel
+
+        //dobValueLabel
+        dobValueLabel = UILabel()
+        dobValueLabel.font = UIFont.appFont(ofSize: ViewTraits.fontMedium)
+        dobValueLabel.textColor = .appLightGray
+        dobValueLabel.accessibilityIdentifier = Accessibility.Label.nameLabel
 
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 
         selectionStyle = .none
-        backgroundColor = .appWhite
+        backgroundColor = .appBlack
 
         // Add subviews
-        nameWrapper.addSubviewsForAutolayout(subviews: [titleLabel, symbolLabel])
-        addSubviewsForAutolayout(subviews: [nameWrapper, valueLabel])
-
+        contentView.addSubviewsForAutolayout(subviews: [nameLabel,
+                                                        nameValueLabel,
+                                                        surnameLabel,
+                                                        surnameValueLabel,
+                                                        countLabel,
+                                                        countValueLabel,
+                                                        dobLabel,
+                                                        dobValueLabel])
         // Add constraints
         addCustomConstraints()
     }
@@ -81,9 +120,14 @@ class FileDetailTableViewCell: UITableViewCell {
 
         super.prepareForReuse()
 
-        titleLabel.text = ""
-        symbolLabel.text = ""
-        valueLabel.text = ""
+        nameLabel.text = ""
+        nameValueLabel.text = ""
+        surnameLabel.text = ""
+        surnameValueLabel.text = ""
+        countLabel.text = ""
+        countValueLabel.text = ""
+        dobLabel.text = ""
+        dobValueLabel.text = ""
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -94,24 +138,37 @@ class FileDetailTableViewCell: UITableViewCell {
 
         NSLayoutConstraint.activate([
 
-            nameWrapper.leadingAnchor.constraint(equalTo: leadingAnchor, constant: ViewTraits.sideMargin),
-            nameWrapper.widthAnchor.constraint(equalToConstant: ViewTraits.wrapperWidth),
-            nameWrapper.topAnchor.constraint(equalTo: topAnchor),
-            nameWrapper.bottomAnchor.constraint(equalTo: bottomAnchor),
+            nameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: ViewTraits.cellMargins.left),
+            nameLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: ViewTraits.cellMargins.top),
+            nameLabel.widthAnchor.constraint(equalToConstant: ViewTraits.labelWidth),
 
-            valueLabel.leadingAnchor.constraint(equalTo: nameWrapper.trailingAnchor, constant: ViewTraits.innerMargin),
-            valueLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -ViewTraits.sideMargin),
-            valueLabel.topAnchor.constraint(equalTo: topAnchor),
-            valueLabel.bottomAnchor.constraint(equalTo: bottomAnchor),
+            nameValueLabel.leadingAnchor.constraint(equalTo: nameLabel.trailingAnchor, constant: ViewTraits.innerMargin),
+            nameValueLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: ViewTraits.cellMargins.top),
+            nameValueLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -ViewTraits.cellMargins.right),
 
-            titleLabel.leadingAnchor.constraint(equalTo: nameWrapper.leadingAnchor, constant: ViewTraits.sideMargin),
-            titleLabel.trailingAnchor.constraint(equalTo: nameWrapper.trailingAnchor, constant: -ViewTraits.sideMargin),
-            titleLabel.topAnchor.constraint(equalTo: nameWrapper.topAnchor, constant: ViewTraits.vMargin),
+            surnameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: ViewTraits.cellMargins.left),
+            surnameLabel.topAnchor.constraint(equalTo: nameValueLabel.bottomAnchor, constant: ViewTraits.vMargin),
+            surnameLabel.widthAnchor.constraint(equalToConstant: ViewTraits.labelWidth),
 
-            symbolLabel.leadingAnchor.constraint(equalTo: nameWrapper.leadingAnchor, constant: ViewTraits.sideMargin),
-            symbolLabel.trailingAnchor.constraint(equalTo: nameWrapper.trailingAnchor, constant: -ViewTraits.sideMargin),
-            symbolLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor),
-            symbolLabel.bottomAnchor.constraint(equalTo: nameWrapper.bottomAnchor, constant: -ViewTraits.vMargin),
-            symbolLabel.heightAnchor.constraint(equalTo: titleLabel.heightAnchor)])
+            surnameValueLabel.leadingAnchor.constraint(equalTo: surnameLabel.trailingAnchor, constant: ViewTraits.innerMargin),
+            surnameValueLabel.topAnchor.constraint(equalTo: nameValueLabel.bottomAnchor, constant: ViewTraits.vMargin),
+            surnameValueLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -ViewTraits.cellMargins.right),
+
+            countLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: ViewTraits.cellMargins.left),
+            countLabel.topAnchor.constraint(equalTo: surnameValueLabel.bottomAnchor, constant: ViewTraits.vMargin),
+            countLabel.widthAnchor.constraint(equalToConstant: ViewTraits.labelWidth),
+
+            countValueLabel.leadingAnchor.constraint(equalTo: countLabel.trailingAnchor, constant: ViewTraits.innerMargin),
+            countValueLabel.topAnchor.constraint(equalTo: surnameValueLabel.bottomAnchor, constant: ViewTraits.vMargin),
+            countValueLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -ViewTraits.cellMargins.right),
+
+            dobLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: ViewTraits.cellMargins.left),
+            dobLabel.topAnchor.constraint(equalTo: countValueLabel.bottomAnchor, constant: ViewTraits.vMargin),
+            dobLabel.widthAnchor.constraint(equalToConstant: ViewTraits.labelWidth),
+
+            dobValueLabel.leadingAnchor.constraint(equalTo: dobLabel.trailingAnchor, constant: ViewTraits.innerMargin),
+            dobValueLabel.topAnchor.constraint(equalTo: countValueLabel.bottomAnchor, constant: ViewTraits.vMargin),
+            dobValueLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -ViewTraits.cellMargins.right),
+            dobValueLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -ViewTraits.cellMargins.bottom)])
     }
 }

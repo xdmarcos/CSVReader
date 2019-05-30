@@ -31,7 +31,6 @@
 		B8FBAEA8229EFA65002439A1 /* FileDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAEA1229EFA65002439A1 /* FileDetailInteractor.swift */; };
 		B8FBAEA9229EFA65002439A1 /* FileDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAEA2229EFA65002439A1 /* FileDetailView.swift */; };
 		B8FBAEAE229F0F71002439A1 /* LoadFileListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAEAD229F0F71002439A1 /* LoadFileListWorker.swift */; };
-		B8FBAEB1229F1210002439A1 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAEB0229F1210002439A1 /* Error.swift */; };
 		B8FBAEB3229F12D0002439A1 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAEB2229F12D0002439A1 /* Color.swift */; };
 		B8FBAEB5229F13E8002439A1 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAEB4229F13E8002439A1 /* Font.swift */; };
 		B8FBAEBA229F14F1002439A1 /* SFProText-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B8FBAEB8229F14F1002439A1 /* SFProText-Regular.otf */; };
@@ -44,6 +43,16 @@
 		B8FBAECA229F199E002439A1 /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAEC9229F199E002439A1 /* GenericViewController.swift */; };
 		B8FBAECC229F1A66002439A1 /* FileListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAECB229F1A66002439A1 /* FileListTableViewCell.swift */; };
 		B8FBAECE229F1E12002439A1 /* FileDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAECD229F1E12002439A1 /* FileDetailTableViewCell.swift */; };
+		B8FBAED8229FF332002439A1 /* Stage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B8FBAED7229FF332002439A1 /* Stage.bundle */; };
+		B8FBAEDD229FF72E002439A1 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAEDC229FF72E002439A1 /* AppConfig.swift */; };
+		B8FBAEDF22A0053C002439A1 /* LoadFileDataWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAEDE22A0053C002439A1 /* LoadFileDataWorker.swift */; };
+		B8FBAEE222A013A0002439A1 /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAEE122A013A0002439A1 /* Issue.swift */; };
+		B8FBAEE422A02070002439A1 /* Production.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B8FBAEE322A02070002439A1 /* Production.bundle */; };
+		B8FBAEE622A02435002439A1 /* AppImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAEE522A02435002439A1 /* AppImages.swift */; };
+		B8FBAEE822A02642002439A1 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAEE722A02642002439A1 /* File.swift */; };
+		B8FBAEEA22A0399E002439A1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAEE922A0399E002439A1 /* String.swift */; };
+		B8FBAEEC22A03BD5002439A1 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAEEB22A03BD5002439A1 /* Date.swift */; };
+		B8FBAEEE22A043F2002439A1 /* FileDetailHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAEED22A043F2002439A1 /* FileDetailHeaderFooterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,7 +110,6 @@
 		B8FBAEA1229EFA65002439A1 /* FileDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDetailInteractor.swift; sourceTree = "<group>"; };
 		B8FBAEA2229EFA65002439A1 /* FileDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDetailView.swift; sourceTree = "<group>"; };
 		B8FBAEAD229F0F71002439A1 /* LoadFileListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFileListWorker.swift; sourceTree = "<group>"; };
-		B8FBAEB0229F1210002439A1 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		B8FBAEB2229F12D0002439A1 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		B8FBAEB4229F13E8002439A1 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		B8FBAEB8229F14F1002439A1 /* SFProText-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Regular.otf"; sourceTree = "<group>"; };
@@ -114,6 +122,16 @@
 		B8FBAEC9229F199E002439A1 /* GenericViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
 		B8FBAECB229F1A66002439A1 /* FileListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListTableViewCell.swift; sourceTree = "<group>"; };
 		B8FBAECD229F1E12002439A1 /* FileDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDetailTableViewCell.swift; sourceTree = "<group>"; };
+		B8FBAED7229FF332002439A1 /* Stage.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Stage.bundle; sourceTree = "<group>"; };
+		B8FBAEDC229FF72E002439A1 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		B8FBAEDE22A0053C002439A1 /* LoadFileDataWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFileDataWorker.swift; sourceTree = "<group>"; };
+		B8FBAEE122A013A0002439A1 /* Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
+		B8FBAEE322A02070002439A1 /* Production.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Production.bundle; sourceTree = "<group>"; };
+		B8FBAEE522A02435002439A1 /* AppImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImages.swift; sourceTree = "<group>"; };
+		B8FBAEE722A02642002439A1 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		B8FBAEE922A0399E002439A1 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		B8FBAEEB22A03BD5002439A1 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		B8FBAEED22A043F2002439A1 /* FileDetailHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDetailHeaderFooterView.swift; sourceTree = "<group>"; };
 		C5B4551F0E4D7CE70BF3009E /* Pods-CSVReaderUITests.debug_stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSVReaderUITests.debug_stage.xcconfig"; path = "Target Support Files/Pods-CSVReaderUITests/Pods-CSVReaderUITests.debug_stage.xcconfig"; sourceTree = "<group>"; };
 		CEE8899496BDFE14A847BD93 /* Pods-CSVReader.release_stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSVReader.release_stage.xcconfig"; path = "Target Support Files/Pods-CSVReader/Pods-CSVReader.release_stage.xcconfig"; sourceTree = "<group>"; };
 		E9FBD7A1362B6EBDB8041505 /* Pods-CSVReaderTests.debug_stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSVReaderTests.debug_stage.xcconfig"; path = "Target Support Files/Pods-CSVReaderTests/Pods-CSVReaderTests.debug_stage.xcconfig"; sourceTree = "<group>"; };
@@ -204,9 +222,11 @@
 			isa = PBXGroup;
 			children = (
 				B8FBAE4E229ED742002439A1 /* AppDelegate.swift */,
+				B8FBAEDB229FF718002439A1 /* App Config */,
 				B8FBAE87229EDAA8002439A1 /* Supporting Files */,
 				B8FBAEAF229F11F7002439A1 /* Extensions */,
 				B8FBAEC0229F1672002439A1 /* Utils */,
+				B8FBAECF229FE6B7002439A1 /* Documents */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -282,6 +302,7 @@
 			children = (
 				B8FBAEA2229EFA65002439A1 /* FileDetailView.swift */,
 				B8FBAECD229F1E12002439A1 /* FileDetailTableViewCell.swift */,
+				B8FBAEED22A043F2002439A1 /* FileDetailHeaderFooterView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -289,6 +310,7 @@
 		B8FBAEAB229F0F25002439A1 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				B8FBAEE022A01394002439A1 /* Model */,
 				B8FBAEAC229F0F2C002439A1 /* Workers */,
 			);
 			path = Core;
@@ -298,6 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				B8FBAEAD229F0F71002439A1 /* LoadFileListWorker.swift */,
+				B8FBAEDE22A0053C002439A1 /* LoadFileDataWorker.swift */,
 			);
 			path = Workers;
 			sourceTree = "<group>";
@@ -305,11 +328,13 @@
 		B8FBAEAF229F11F7002439A1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B8FBAEB0229F1210002439A1 /* Error.swift */,
 				B8FBAEB2229F12D0002439A1 /* Color.swift */,
 				B8FBAEB4229F13E8002439A1 /* Font.swift */,
 				B8FBAEBC229F1604002439A1 /* UIView.swift */,
 				B8FBAEBE229F1634002439A1 /* Collection.swift */,
+				B8FBAEE522A02435002439A1 /* AppImages.swift */,
+				B8FBAEE922A0399E002439A1 /* String.swift */,
+				B8FBAEEB22A03BD5002439A1 /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -339,6 +364,32 @@
 				B8FBAEC9229F199E002439A1 /* GenericViewController.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		B8FBAECF229FE6B7002439A1 /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				B8FBAEE322A02070002439A1 /* Production.bundle */,
+				B8FBAED7229FF332002439A1 /* Stage.bundle */,
+			);
+			path = Documents;
+			sourceTree = "<group>";
+		};
+		B8FBAEDB229FF718002439A1 /* App Config */ = {
+			isa = PBXGroup;
+			children = (
+				B8FBAEDC229FF72E002439A1 /* AppConfig.swift */,
+			);
+			path = "App Config";
+			sourceTree = "<group>";
+		};
+		B8FBAEE022A01394002439A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B8FBAEE122A013A0002439A1 /* Issue.swift */,
+				B8FBAEE722A02642002439A1 /* File.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C827E5ED54248DB80BAE96F3 /* Frameworks */ = {
@@ -483,6 +534,8 @@
 				B8FBAE59229ED744002439A1 /* LaunchScreen.storyboard in Resources */,
 				B8FBAEBA229F14F1002439A1 /* SFProText-Regular.otf in Resources */,
 				B8FBAEBB229F14F1002439A1 /* SFProText-Bold.otf in Resources */,
+				B8FBAED8229FF332002439A1 /* Stage.bundle in Resources */,
+				B8FBAEE422A02070002439A1 /* Production.bundle in Resources */,
 				B8FBAE56229ED744002439A1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -618,22 +671,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8FBAEBD229F1604002439A1 /* UIView.swift in Sources */,
+				B8FBAEDF22A0053C002439A1 /* LoadFileDataWorker.swift in Sources */,
 				B8FBAE94229EFA02002439A1 /* FileListRouter.swift in Sources */,
 				B8FBAECA229F199E002439A1 /* GenericViewController.swift in Sources */,
 				B8FBAE93229EFA02002439A1 /* FileListWorker.swift in Sources */,
+				B8FBAEE222A013A0002439A1 /* Issue.swift in Sources */,
 				B8FBAE97229EFA02002439A1 /* FileListInteractor.swift in Sources */,
 				B8FBAE96229EFA02002439A1 /* FileListViewController.swift in Sources */,
+				B8FBAEE822A02642002439A1 /* File.swift in Sources */,
 				B8FBAEB5229F13E8002439A1 /* Font.swift in Sources */,
 				B8FBAECC229F1A66002439A1 /* FileListTableViewCell.swift in Sources */,
 				B8FBAEA9229EFA65002439A1 /* FileDetailView.swift in Sources */,
 				B8FBAEA6229EFA65002439A1 /* FileDetailModels.swift in Sources */,
 				B8FBAE98229EFA02002439A1 /* FileListView.swift in Sources */,
+				B8FBAEE622A02435002439A1 /* AppImages.swift in Sources */,
 				B8FBAE92229EFA02002439A1 /* FileListPresenter.swift in Sources */,
 				B8FBAEC3229F1695002439A1 /* Identifiers.swift in Sources */,
 				B8FBAEA4229EFA65002439A1 /* FileDetailWorker.swift in Sources */,
-				B8FBAEB1229F1210002439A1 /* Error.swift in Sources */,
 				B8FBAECE229F1E12002439A1 /* FileDetailTableViewCell.swift in Sources */,
+				B8FBAEEC22A03BD5002439A1 /* Date.swift in Sources */,
 				B8FBAEBF229F1634002439A1 /* Collection.swift in Sources */,
+				B8FBAEDD229FF72E002439A1 /* AppConfig.swift in Sources */,
 				B8FBAEAE229F0F71002439A1 /* LoadFileListWorker.swift in Sources */,
 				B8FBAEA7229EFA65002439A1 /* FileDetailViewController.swift in Sources */,
 				B8FBAEA8229EFA65002439A1 /* FileDetailInteractor.swift in Sources */,
@@ -642,7 +700,9 @@
 				B8FBAEA5229EFA65002439A1 /* FileDetailRouter.swift in Sources */,
 				B8FBAE95229EFA02002439A1 /* FileListModels.swift in Sources */,
 				B8FBAEB3229F12D0002439A1 /* Color.swift in Sources */,
+				B8FBAEEE22A043F2002439A1 /* FileDetailHeaderFooterView.swift in Sources */,
 				B8FBAEC5229F16E1002439A1 /* DebugLog.swift in Sources */,
+				B8FBAEEA22A0399E002439A1 /* String.swift in Sources */,
 				B8FBAEC7229F16F2002439A1 /* Screen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

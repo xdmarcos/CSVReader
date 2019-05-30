@@ -13,17 +13,21 @@ class FileListTableViewCell: UITableViewCell {
     private struct ViewTraits {
 
         // Margins
-        static let sideMargin: CGFloat = 10.0
-        static let innerMargin: CGFloat = 15.0
+        static let cellMargins = UIEdgeInsets(top: 15.0, left: 10.0, bottom: 15.0, right: 10.0)
+        static let innerMargin: CGFloat = 10.0
         static let vMargin: CGFloat = 5.0
 
-        // Width
-        static let wrapperWidth: CGFloat = 150.0
+        //Size
+        static let typeWidth: CGFloat = 60.0
+        static let separatorHeight: CGFloat = 1.0
 
         // Font size
-        static let fontBig: CGFloat = 20.0
+        static let fontBig: CGFloat = DeviceScreenType.iPhoneBigScreen ?  30.0 : 28.0
         static let fontMedium: CGFloat = 16.0
         static let fontSmall: CGFloat = 12.0
+
+        // UI
+        static let numberOfLines = 0
     }
 
     enum Accessibility {
@@ -31,47 +35,51 @@ class FileListTableViewCell: UITableViewCell {
         struct Label {
             static var titleLabel = "titleLabel"
             static var symbolLabel = "symbolLabel"
-            static var valueLabel = "valueLabel"
+            static var pathLabel = "valueLabel"
         }
     }
 
     let titleLabel: UILabel
     let symbolLabel: UILabel
-    let valueLabel: UILabel
-    private let nameWrapper: UIView
+    let pathLabel: UILabel
+    private let separatorView: UIView
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
 
-        //titleLabel
-        titleLabel = UILabel()
-        titleLabel.font = UIFont.boldSystemFont(ofSize: ViewTraits.fontBig)
-        titleLabel.textColor = .appDarkGray
-        titleLabel.accessibilityLabel = Accessibility.Label.titleLabel
-
         //symbolLabel
         symbolLabel = UILabel()
-        symbolLabel.font = UIFont.boldSystemFont(ofSize: ViewTraits.fontSmall)
+        symbolLabel.font = UIFont.appBoldFont(ofSize: ViewTraits.fontBig)
         symbolLabel.textColor = .appDarkGray
-        symbolLabel.accessibilityLabel = Accessibility.Label.symbolLabel
+        symbolLabel.backgroundColor = .appWhite
+        symbolLabel.textAlignment = .center
+        symbolLabel.accessibilityIdentifier = Accessibility.Label.symbolLabel
 
-        //valueLabel
-        valueLabel = UILabel()
-        valueLabel.font = UIFont.systemFont(ofSize: ViewTraits.fontMedium)
-        valueLabel.textColor = .appDarkGray
-        valueLabel.textAlignment = .right
-        valueLabel.accessibilityLabel = Accessibility.Label.valueLabel
+        //titleLabel
+        titleLabel = UILabel()
+        titleLabel.font = UIFont.appBoldFont(ofSize: ViewTraits.fontMedium)
+        titleLabel.textColor = .appWhite
+        titleLabel.accessibilityIdentifier = Accessibility.Label.titleLabel
 
-        //nameWrapper
-        nameWrapper = UIView()
+        //pathLabel
+        pathLabel = UILabel()
+        pathLabel.font = UIFont.appFont(ofSize: ViewTraits.fontSmall)
+        pathLabel.textColor = .appLightGray
+        pathLabel.textAlignment = .left
+        pathLabel.lineBreakMode = .byTruncatingHead
+        pathLabel.numberOfLines = ViewTraits.numberOfLines
+        pathLabel.accessibilityIdentifier = Accessibility.Label.pathLabel
+
+        //separatorView
+        separatorView = UIView()
+        separatorView.backgroundColor = .appLightGray
 
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 
         selectionStyle = .none
-        backgroundColor = .appWhite
+        backgroundColor = .appBlack
 
         // Add subviews
-        nameWrapper.addSubviewsForAutolayout(subviews: [titleLabel, symbolLabel])
-        addSubviewsForAutolayout(subviews: [nameWrapper, valueLabel])
+        contentView.addSubviewsForAutolayout(subviews: [symbolLabel, titleLabel, pathLabel, separatorView])
 
         // Add constraints
         addCustomConstraints()
@@ -83,7 +91,7 @@ class FileListTableViewCell: UITableViewCell {
 
         titleLabel.text = ""
         symbolLabel.text = ""
-        valueLabel.text = ""
+        pathLabel.text = ""
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -94,24 +102,22 @@ class FileListTableViewCell: UITableViewCell {
 
         NSLayoutConstraint.activate([
 
-            nameWrapper.leadingAnchor.constraint(equalTo: leadingAnchor, constant: ViewTraits.sideMargin),
-            nameWrapper.widthAnchor.constraint(equalToConstant: ViewTraits.wrapperWidth),
-            nameWrapper.topAnchor.constraint(equalTo: topAnchor),
-            nameWrapper.bottomAnchor.constraint(equalTo: bottomAnchor),
+            symbolLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: ViewTraits.innerMargin),
+            symbolLabel.widthAnchor.constraint(equalToConstant: ViewTraits.typeWidth),
+            symbolLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
 
-            valueLabel.leadingAnchor.constraint(equalTo: nameWrapper.trailingAnchor, constant: ViewTraits.innerMargin),
-            valueLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -ViewTraits.sideMargin),
-            valueLabel.topAnchor.constraint(equalTo: topAnchor),
-            valueLabel.bottomAnchor.constraint(equalTo: bottomAnchor),
+            titleLabel.leadingAnchor.constraint(equalTo: symbolLabel.trailingAnchor, constant: ViewTraits.innerMargin),
+            titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -ViewTraits.cellMargins.right),
+            titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: ViewTraits.cellMargins.top),
 
-            titleLabel.leadingAnchor.constraint(equalTo: nameWrapper.leadingAnchor, constant: ViewTraits.sideMargin),
-            titleLabel.trailingAnchor.constraint(equalTo: nameWrapper.trailingAnchor, constant: -ViewTraits.sideMargin),
-            titleLabel.topAnchor.constraint(equalTo: nameWrapper.topAnchor, constant: ViewTraits.vMargin),
+            pathLabel.leadingAnchor.constraint(equalTo: symbolLabel.trailingAnchor, constant: ViewTraits.innerMargin),
+            pathLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -ViewTraits.cellMargins.right),
+            pathLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: ViewTraits.vMargin),
+            pathLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -ViewTraits.cellMargins.bottom),
 
-            symbolLabel.leadingAnchor.constraint(equalTo: nameWrapper.leadingAnchor, constant: ViewTraits.sideMargin),
-            symbolLabel.trailingAnchor.constraint(equalTo: nameWrapper.trailingAnchor, constant: -ViewTraits.sideMargin),
-            symbolLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor),
-            symbolLabel.bottomAnchor.constraint(equalTo: nameWrapper.bottomAnchor, constant: -ViewTraits.vMargin),
-            symbolLabel.heightAnchor.constraint(equalTo: titleLabel.heightAnchor)])
+            separatorView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: ViewTraits.cellMargins.left),
+            separatorView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -ViewTraits.cellMargins.right),
+            separatorView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+            separatorView.heightAnchor.constraint(equalToConstant: ViewTraits.separatorHeight)])
     }
 }

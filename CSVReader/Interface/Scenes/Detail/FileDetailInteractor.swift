@@ -9,32 +9,26 @@ import UIKit
 
 protocol FileDetailBusinessLogic {
 
-    func doSomething(request: FileDetail.Something.Request)
+    func tryGetFileData(request: FileDetail.Data.Request)
 }
 
 protocol FileDetailDataStore {
 
-    //var name: String { get set }
+    var incommingFileName: String { get set }
 }
 
 class FileDetailInteractor: FileDetailBusinessLogic, FileDetailDataStore {
 
     var presenter: FileDetailPresentationLogic?
-    var worker: FileDetailWorker?
-    //var name: String = ""
+    var worker = FileDetailWorker()
+    var incommingFileName = ""
 
-    // MARK: Do something
-    func doSomething(request: FileDetail.Something.Request) {
+    // MARK: Do
+    func tryGetFileData(request: FileDetail.Data.Request) {
 
-        worker = FileDetailWorker()
-        worker?.doSomeWork()
+        let data = worker.doGetDataFromFile(file: incommingFileName)
 
-        let response = FileDetail.Something.Response()
-        presenter?.presentSomething(response: response)
+        let response = FileDetail.Data.Response(title: incommingFileName, data: data)
+        presenter?.presentFileData(response: response)
     }
-}
-
-// MARK: Output --- Present something
-extension FileDetailInteractor {
-
 }

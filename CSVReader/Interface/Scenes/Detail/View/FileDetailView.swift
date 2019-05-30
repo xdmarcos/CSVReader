@@ -17,14 +17,21 @@ class FileDetailView: UIView {
         static let estimatedRowHeight: CGFloat = 80
     }
 
+    enum Accessibility {
+
+        struct Label {
+            static var tableView = "detailTableView"
+        }
+    }
+
     // MARK: Public
     let tableView: UITableView
 
     override init(frame: CGRect) {
 
         //tableView
-        tableView = UITableView(frame: .zero, style: .grouped)
-        tableView.backgroundColor = .appWhite
+        tableView = UITableView(frame: .zero, style: .plain)
+        tableView.backgroundColor = .appBlack
         tableView.separatorStyle = .none
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = ViewTraits.estimatedRowHeight
@@ -32,11 +39,12 @@ class FileDetailView: UIView {
         tableView.showsVerticalScrollIndicator = false
         tableView.showsHorizontalScrollIndicator = false
         tableView.contentInset = ViewTraits.tableContentInset
+        tableView.accessibilityIdentifier = Accessibility.Label.tableView
 
         // Init
         super.init(frame: frame)
 
-        backgroundColor = .appWhite
+        backgroundColor = .appBlack
 
         // Add subviews
         addSubviewForAutolayout(subview: tableView)

@@ -9,7 +9,10 @@ import UIKit
 
 class FileListWorker {
 
-    func doSomeWork() {
-        
+    var loadFileListWorker: LoadFileListWorkerAlias = LoadFileListWorker()
+
+    func doGetFileList(fromBundle bundle: String) -> [String] {
+
+        return loadFileListWorker.fileList(fromBundle: bundle)
     }
 }

@@ -7,4 +7,5 @@
 
 struct Identifiers {
 
+    static let navBarBackButtonImage = "arrowLeft"
 }

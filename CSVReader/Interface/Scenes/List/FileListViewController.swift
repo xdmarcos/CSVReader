@@ -96,9 +96,12 @@ extension FileListViewController: UITableViewDelegate, UITableViewDataSource {
 
     private func configureCell(_ cell: FileListTableViewCell, forIndexPath indexPath: IndexPath) -> UITableViewCell {
 
-        guard let fileName = viewModel.datasource[safe: indexPath.row] else { return cell }
+        guard let file = viewModel.datasource[safe: indexPath.row] else { return cell }
 
-        cell.titleLabel.text = fileName
+        cell.symbolLabel.text = file.type
+        cell.titleLabel.text = file.name
+        cell.pathLabel.text = file.path
+
         return cell
     }
 }
@@ -120,6 +123,8 @@ extension FileListViewController: FileListDisplayLogic {
 
         title = viewModel.screenTitle
         self.viewModel = viewModel
+
+        sceneView.tableView.reloadData()
     }
 }
 

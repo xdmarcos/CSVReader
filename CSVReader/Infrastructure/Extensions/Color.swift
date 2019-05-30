@@ -38,4 +38,8 @@ extension UIColor {
 
     static let appDarkGray = UIColor(hexString: "212121")
     static let appWhite = UIColor.white
+    static let appBlack = UIColor.black
+    static let appLightGray = UIColor.lightText
+    static let appGray = UIColor.darkText
+    static let appLighterGray = UIColor.lightGray
 }

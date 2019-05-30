@@ -9,7 +9,7 @@ import UIKit
 
 protocol FileDetailDisplayLogic: class {
 
-    func displaySomething(viewModel: FileDetail.Something.ViewModel)
+    func displayFileData(viewModel: FileDetail.Data.ViewModel)
 }
 
 class FileDetailViewController: GenericViewController {
@@ -18,6 +18,9 @@ class FileDetailViewController: GenericViewController {
     var router: (FileDetailRoutingLogic & FileDetailDataPassing)?
 
     private let sceneView = FileDetailView()
+    private var viewModel = FileDetail.Data.ViewModel(screenTitle: "",
+                                                      headerValues: [],
+                                                      datasource: [])
 
     // MARK: Object lifecycle
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -56,9 +59,24 @@ class FileDetailViewController: GenericViewController {
 
         super.viewDidLoad()
 
+        let backButton = UIBarButtonItem(image: UIImage.NavigationBar.back,
+                                         style: .plain,
+                                         target: self,
+                                         action: #selector(goBack))
+        navigationItem.leftBarButtonItem = backButton
+        
         sceneView.tableView.delegate = self
         sceneView.tableView.dataSource = self
         sceneView.tableView.register(FileDetailTableViewCell.self, forCellReuseIdentifier: FileDetailTableViewCell.reuseIdentifier)
+        sceneView.tableView.register(FileDetailHeaderFooterView.self, forHeaderFooterViewReuseIdentifier: FileDetailHeaderFooterView.reuseIdentifier)
+
+
+        askForFileData()
+    }
+
+    // MARK: Actions
+    @objc func goBack() {
+        prepareForGoBack()
     }
 }
 
@@ -67,7 +85,7 @@ extension FileDetailViewController: UITableViewDelegate, UITableViewDataSource {
 
     func numberOfSections(in tableView: UITableView) -> Int {
 
-        return 1
+        return viewModel.datasource.count
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -85,41 +103,62 @@ extension FileDetailViewController: UITableViewDelegate, UITableViewDataSource {
         return UITableViewCell()
     }
 
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
-    }
-
     private func configureCell(_ cell: FileDetailTableViewCell, forIndexPath indexPath: IndexPath) -> UITableViewCell {
 
-        cell.titleLabel.text = "title"
+        guard let issue = viewModel.datasource[safe: indexPath.section] else { return cell }
+
+        cell.nameLabel.text = viewModel.headerValues[safe: FileDetail.Header.name.rawValue] ?? ""
+        cell.nameValueLabel.text = issue.name
+        cell.surnameLabel.text = viewModel.headerValues[safe: FileDetail.Header.surname.rawValue] ?? ""
+        cell.surnameValueLabel.text = issue.surname
+        cell.countLabel.text = viewModel.headerValues[safe: FileDetail.Header.count.rawValue] ?? ""
+        cell.countValueLabel.text = issue.count
+        cell.dobLabel.text = viewModel.headerValues[safe: FileDetail.Header.dob.rawValue] ?? ""
+        cell.dobValueLabel.text = issue.dob.toString()
+
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+
+        guard let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: FileDetailHeaderFooterView.reuseIdentifier) as? FileDetailHeaderFooterView else {
+
+            return FileDetailHeaderFooterView()
+        }
+
+        let item = NSLocalizedString("Item", comment: "")
+        header.titleLabel.text = String(format: "%@ %d", item, section + 1)
+
+        return header
     }
 }
 
 // MARK: Output --- Do something
 extension FileDetailViewController {
 
-    func doSomething() {
+    func askForFileData() {
 
-        let request = FileDetail.Something.Request()
-        interactor?.doSomething(request: request)
+        let request = FileDetail.Data.Request()
+        interactor?.tryGetFileData(request: request)
     }
 }
 
 // MARK: Input --- Display something
 extension FileDetailViewController: FileDetailDisplayLogic {
 
-    func displaySomething(viewModel: FileDetail.Something.ViewModel) {
+    func displayFileData(viewModel: FileDetail.Data.ViewModel) {
 
-        //nameTextField.text = viewModel.name
+        title = viewModel.screenTitle
+        self.viewModel = viewModel
+
+        sceneView.tableView.reloadData()
     }
 }
 
 // MARK: Routing --- Navigate next scene
 extension FileDetailViewController {
 
-    private func prepareForNextScene() {
-
-        //        router?.routeToNextScene()
+    func prepareForGoBack() {
+        router?.navigateBack()
     }
 }

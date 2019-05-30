@@ -14,27 +14,22 @@ protocol FileListBusinessLogic {
 
 protocol FileListDataStore {
 
-    //var name: String { get set }
+    var filesList: [String] { get set }
 }
 
 class FileListInteractor: FileListBusinessLogic, FileListDataStore {
 
     var presenter: FileListPresentationLogic?
-    var worker: FileListWorker?
-    //var name: String = ""
+    var worker = FileListWorker()
+    var filesList: [String] = []
 
-    // MARK: Do something
+    // MARK: Do
     func tryRetrieveFileList(request: FileList.Retrieve.Request) {
 
-        worker = FileListWorker()
-        worker?.doSomeWork()
-
-        let response = FileList.Retrieve.Response()
+        let files = worker.doGetFileList(fromBundle: AppConfig.bundleName)
+        filesList = files
+        
+        let response = FileList.Retrieve.Response(files: files)
         presenter?.presentFileList(response: response)
     }
-}
-
-// MARK: Output --- Present something
-extension FileListInteractor {
-
 }
