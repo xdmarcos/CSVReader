@@ -17,7 +17,7 @@ class FileListViewController: GenericViewController {
     var interactor: FileListBusinessLogic?
     var router: (FileListRoutingLogic & FileListDataPassing)?
 
-    private let sceneView = FileListView()
+    let sceneView = FileListView()
     private var viewModel = FileList.Retrieve.ViewModel(screenTitle: "", datasource: [])
 
     // MARK: Object lifecycle

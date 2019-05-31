@@ -11,5 +11,5 @@ struct Issue {
     let name: String
     let surname: String
     let count: String
-    let dob: Date
+    let dob: Date?
 }

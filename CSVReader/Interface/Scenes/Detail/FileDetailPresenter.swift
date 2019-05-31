@@ -79,7 +79,7 @@ extension FileDetailPresenter {
             let issue = Issue(name: name,
                               surname: surname,
                               count: count,
-                              dob: dob.toDate() ?? Date())
+                              dob: dob.toDate())
             issues.append(issue)
         }
 

@@ -2,8 +2,7 @@
 //  FileDetailHeaderFooterView.swift
 //  CSVReader
 //
-//  Created by Marcos Gonzalez on 30/05/2019.
-//  Copyright © 2019 MG. All rights reserved.
+//  Created by Marcos Gonzalez on 2019.
 //
 
 import UIKit

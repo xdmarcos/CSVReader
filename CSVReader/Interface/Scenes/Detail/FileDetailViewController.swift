@@ -17,7 +17,7 @@ class FileDetailViewController: GenericViewController {
     var interactor: FileDetailBusinessLogic?
     var router: (FileDetailRoutingLogic & FileDetailDataPassing)?
 
-    private let sceneView = FileDetailView()
+    let sceneView = FileDetailView()
     private var viewModel = FileDetail.Data.ViewModel(screenTitle: "",
                                                       headerValues: [],
                                                       datasource: [])
@@ -70,7 +70,6 @@ class FileDetailViewController: GenericViewController {
         sceneView.tableView.register(FileDetailTableViewCell.self, forCellReuseIdentifier: FileDetailTableViewCell.reuseIdentifier)
         sceneView.tableView.register(FileDetailHeaderFooterView.self, forHeaderFooterViewReuseIdentifier: FileDetailHeaderFooterView.reuseIdentifier)
 
-
         askForFileData()
     }
 
@@ -114,7 +113,7 @@ extension FileDetailViewController: UITableViewDelegate, UITableViewDataSource {
         cell.countLabel.text = viewModel.headerValues[safe: FileDetail.Header.count.rawValue] ?? ""
         cell.countValueLabel.text = issue.count
         cell.dobLabel.text = viewModel.headerValues[safe: FileDetail.Header.dob.rawValue] ?? ""
-        cell.dobValueLabel.text = issue.dob.toString()
+        cell.dobValueLabel.text = issue.dob?.toString()
 
         return cell
     }
