@@ -15,9 +15,11 @@ protocol LoadFileListWorkerAlias {
 class LoadFileListWorker: LoadFileListWorkerAlias {
 
     private static let fileType = "csv"
-    private let fileManager = FileManager.default
+
     func fileList(fromBundle bundle: String) -> [String] {
 
+        guard !bundle.isEmpty else { return [] }
+        
         let mainBundle = Bundle(for: type(of: self))
         let bundleURL = mainBundle.url(forResource: bundle, withExtension: "bundle")
         guard let bURL = bundleURL, let filesBundle = Bundle(url: bURL) else { return [] }

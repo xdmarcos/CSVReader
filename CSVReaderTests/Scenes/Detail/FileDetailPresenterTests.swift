@@ -258,4 +258,46 @@ class FileDetailPresenterTests: XCTestCase {
         XCTAssertFalse(headers.isEmpty, "Headers should NOT be empty")
         XCTAssertEqual(headers.count, expectedHeaders, "Headers must be 4")
     }
+
+    func testCreateHeaderFieldsLess1() {
+
+        // Given
+        let expectedHeaders = 1
+        let data = FileDetailFixtures().fileLessColumns(number: expectedHeaders)
+
+        // When
+        let headers = sut.createHeaderFields(data: data)
+
+        // Then
+        XCTAssertFalse(headers.isEmpty, "Headers should NOT be empty")
+        XCTAssertEqual(headers.count, expectedHeaders, "Headers must be 1")
+    }
+
+    func testCreateHeaderFieldsLess2() {
+
+        // Given
+        let expectedHeaders = 2
+        let data = FileDetailFixtures().fileLessColumns(number: expectedHeaders)
+
+        // When
+        let headers = sut.createHeaderFields(data: data)
+
+        // Then
+        XCTAssertFalse(headers.isEmpty, "Headers should NOT be empty")
+        XCTAssertEqual(headers.count, expectedHeaders, "Headers must be 2")
+    }
+
+    func testCreateHeaderFieldsLess3() {
+
+        // Given
+        let expectedHeaders = 3
+        let data = FileDetailFixtures().fileLessColumns(number: expectedHeaders)
+
+        // When
+        let headers = sut.createHeaderFields(data: data)
+
+        // Then
+        XCTAssertFalse(headers.isEmpty, "Headers should NOT be empty")
+        XCTAssertEqual(headers.count, expectedHeaders, "Headers must be 3")
+    }
 }

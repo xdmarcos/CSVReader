@@ -10,6 +10,7 @@
 		29044E35915653CF7F40F0F4 /* Pods_CSVReaderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7FA76EA816E08FBF28D1BB /* Pods_CSVReaderUITests.framework */; };
 		30B3AB0A6E9BFE79611CD665 /* Pods_CSVReaderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7553B79DC694E9B91E81B53 /* Pods_CSVReaderTests.framework */; };
 		B257CA0000057A287BF8926A /* Pods_CSVReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82188BF129C8F7AD7A7BB87 /* Pods_CSVReader.framework */; };
+		B80472D922A18E2900452566 /* LoadFileListWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80472D822A18E2900452566 /* LoadFileListWorkerTests.swift */; };
 		B8FBAE4F229ED742002439A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAE4E229ED742002439A1 /* AppDelegate.swift */; };
 		B8FBAE56229ED744002439A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8FBAE55229ED744002439A1 /* Assets.xcassets */; };
 		B8FBAE59229ED744002439A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8FBAE57229ED744002439A1 /* LaunchScreen.storyboard */; };
@@ -97,6 +98,7 @@
 		7928D3531B98A1B073952F4C /* Pods-CSVReaderUITests.release_stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSVReaderUITests.release_stage.xcconfig"; path = "Target Support Files/Pods-CSVReaderUITests/Pods-CSVReaderUITests.release_stage.xcconfig"; sourceTree = "<group>"; };
 		AF5D798368BD1F188B7E4A35 /* Pods-CSVReader.debug_prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSVReader.debug_prod.xcconfig"; path = "Target Support Files/Pods-CSVReader/Pods-CSVReader.debug_prod.xcconfig"; sourceTree = "<group>"; };
 		B7553B79DC694E9B91E81B53 /* Pods_CSVReaderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSVReaderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B80472D822A18E2900452566 /* LoadFileListWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFileListWorkerTests.swift; sourceTree = "<group>"; };
 		B8FBAE4B229ED742002439A1 /* SimpleReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8FBAE4E229ED742002439A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8FBAE55229ED744002439A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -197,6 +199,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B80472D722A18E0000452566 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B80472D822A18E2900452566 /* LoadFileListWorkerTests.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		B8FBAE42229ED742002439A1 = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +242,7 @@
 		B8FBAE62229ED744002439A1 /* CSVReaderTests */ = {
 			isa = PBXGroup;
 			children = (
+				B80472D722A18E0000452566 /* Core */,
 				B8FBAEF422A1447C002439A1 /* Scenes */,
 				B8FBAEF222A143E2002439A1 /* Fixtures */,
 				B8FBAEF322A1446B002439A1 /* Supporting Files */,
@@ -854,6 +865,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8FBAF0622A14660002439A1 /* FileListPresenterTests.swift in Sources */,
+				B80472D922A18E2900452566 /* LoadFileListWorkerTests.swift in Sources */,
 				B8FBAF0C22A14689002439A1 /* FileDetailInteractorTests.swift in Sources */,
 				B8FBAEFE22A14617002439A1 /* FileDetailMocks.swift in Sources */,
 				B8FBAF0B22A14689002439A1 /* FileDetailViewControllerTests.swift in Sources */,

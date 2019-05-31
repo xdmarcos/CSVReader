@@ -42,7 +42,15 @@ extension FileDetailPresenter {
     func createHeaderFields(data: [[String]]) -> [String] {
 
         guard let firstRow = data.first else { return [] }
-        return firstRow
+
+        var headers = [String]()
+        for (idx, header) in firstRow.enumerated() {
+
+            guard idx < 4 else { break }
+            headers.append(header)
+        }
+
+        return headers
     }
 
     func createIssueData(data: [[String]]) -> [Issue] {
