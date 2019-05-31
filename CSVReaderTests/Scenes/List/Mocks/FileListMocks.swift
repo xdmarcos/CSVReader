@@ -9,6 +9,14 @@
 
 struct FileListMocks {
 
+    static let filePath = "Library/Developer/CoreSimulator/Devices/data/Containers/Bundle/Application/SimpleReader.app/issues.csv"
+    static let filePathNoName = "Library/Developer/CoreSimulator/Devices/data/Containers/Bundle/Application"
+    static let filePathNoType = "Library/Developer/CoreSimulator/Devices/data/Containers/Bundle/Application/SimpleReader.app/issues"
+    static let filePathEmpty = ""
+
+    static let filePathArray = [filePath, filePath, filePath]
+    static let filePathArrayEmpty: [String] = []
+
     static func list0FilesViewModel() -> FileList.Retrieve.ViewModel {
 
         return FileList.Retrieve.ViewModel(screenTitle: "0 File List",
@@ -70,5 +78,47 @@ struct FileListMocks {
         let filePath3 = "anyPath3"
         let files = [filePath1, filePath2, filePath3]
         return FileList.Retrieve.Response(files: files)
+    }
+
+    // MARK: Worker
+    class FileListWorkerMock: FileListWorker {
+
+        override func doGetFileList(fromBundle bundle: String) -> [String] {
+
+            let filePath1 = "anyPath1"
+            let filePath2 = "anyPath2"
+            let filePath3 = "anyPath3"
+            let files = [filePath1, filePath2, filePath3]
+            return files
+        }
+    }
+
+    class FileListWorkerEmptyMock: FileListWorker {
+
+        override func doGetFileList(fromBundle bundle: String) -> [String] {
+
+            return []
+        }
+    }
+
+    // MARK: LoadFileListWorker
+    class LoadFileListWorker: LoadFileListWorkerAlias {
+
+        func fileList(fromBundle bundle: String) -> [String] {
+
+            let filePath1 = "anyPath1"
+            let filePath2 = "anyPath2"
+            let filePath3 = "anyPath3"
+            let files = [filePath1, filePath2, filePath3]
+            return files
+        }
+    }
+
+    class LoadFileListWorkerEmpty: LoadFileListWorkerAlias {
+
+        func fileList(fromBundle bundle: String) -> [String] {
+
+            return []
+        }
     }
 }

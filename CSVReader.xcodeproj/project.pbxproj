@@ -13,7 +13,6 @@
 		B8FBAE4F229ED742002439A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAE4E229ED742002439A1 /* AppDelegate.swift */; };
 		B8FBAE56229ED744002439A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8FBAE55229ED744002439A1 /* Assets.xcassets */; };
 		B8FBAE59229ED744002439A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8FBAE57229ED744002439A1 /* LaunchScreen.storyboard */; };
-		B8FBAE64229ED744002439A1 /* CSVReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAE63229ED744002439A1 /* CSVReaderTests.swift */; };
 		B8FBAE8A229EE9BF002439A1 /* KIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8FBAE89229EE9BF002439A1 /* KIF.framework */; };
 		B8FBAE92229EFA02002439A1 /* FileListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAE8B229EFA02002439A1 /* FileListPresenter.swift */; };
 		B8FBAE93229EFA02002439A1 /* FileListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAE8C229EFA02002439A1 /* FileListWorker.swift */; };
@@ -63,7 +62,11 @@
 		B8FBAF0C22A14689002439A1 /* FileDetailInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAF0822A14689002439A1 /* FileDetailInteractorTests.swift */; };
 		B8FBAF0D22A14689002439A1 /* FileDetailWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAF0922A14689002439A1 /* FileDetailWorkerTests.swift */; };
 		B8FBAF0E22A14689002439A1 /* FileDetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAF0A22A14689002439A1 /* FileDetailPresenterTests.swift */; };
-		B8FBAF1122A15B61002439A1 /* CSVReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAF1022A15B61002439A1 /* CSVReaderUITests.swift */; };
+		B8FBAF1522A15C95002439A1 /* Robot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAF1322A15C94002439A1 /* Robot.swift */; };
+		B8FBAF1622A15C95002439A1 /* XCTest+KIFTestActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAF1422A15C94002439A1 /* XCTest+KIFTestActor.swift */; };
+		B8FBAF1B22A15E87002439A1 /* FileListViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAF1A22A15E87002439A1 /* FileListViewControllerUITests.swift */; };
+		B8FBAF1D22A15EA8002439A1 /* FileDetailViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAF1C22A15EA8002439A1 /* FileDetailViewControllerUITests.swift */; };
+		B8FBAF1F22A176CC002439A1 /* XCTestCaseExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAF1E22A176CC002439A1 /* XCTestCaseExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,7 +103,6 @@
 		B8FBAE58229ED744002439A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8FBAE5A229ED744002439A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8FBAE5F229ED744002439A1 /* CSVReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSVReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8FBAE63229ED744002439A1 /* CSVReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVReaderTests.swift; sourceTree = "<group>"; };
 		B8FBAE65229ED744002439A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8FBAE72229ED80A002439A1 /* CSVReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSVReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8FBAE76229ED80A002439A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -154,7 +156,11 @@
 		B8FBAF0922A14689002439A1 /* FileDetailWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDetailWorkerTests.swift; sourceTree = "<group>"; };
 		B8FBAF0A22A14689002439A1 /* FileDetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDetailPresenterTests.swift; sourceTree = "<group>"; };
 		B8FBAF0F22A15B60002439A1 /* CSVReaderUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CSVReaderUITests-Bridging-Header.h"; sourceTree = "<group>"; };
-		B8FBAF1022A15B61002439A1 /* CSVReaderUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CSVReaderUITests.swift; path = ../../../.Trashes/501/CSVReaderUITests.swift; sourceTree = "<group>"; };
+		B8FBAF1322A15C94002439A1 /* Robot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Robot.swift; sourceTree = "<group>"; };
+		B8FBAF1422A15C94002439A1 /* XCTest+KIFTestActor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTest+KIFTestActor.swift"; sourceTree = "<group>"; };
+		B8FBAF1A22A15E87002439A1 /* FileListViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListViewControllerUITests.swift; sourceTree = "<group>"; };
+		B8FBAF1C22A15EA8002439A1 /* FileDetailViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDetailViewControllerUITests.swift; sourceTree = "<group>"; };
+		B8FBAF1E22A176CC002439A1 /* XCTestCaseExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCaseExtensions.swift; sourceTree = "<group>"; };
 		C5B4551F0E4D7CE70BF3009E /* Pods-CSVReaderUITests.debug_stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSVReaderUITests.debug_stage.xcconfig"; path = "Target Support Files/Pods-CSVReaderUITests/Pods-CSVReaderUITests.debug_stage.xcconfig"; sourceTree = "<group>"; };
 		CEE8899496BDFE14A847BD93 /* Pods-CSVReader.release_stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSVReader.release_stage.xcconfig"; path = "Target Support Files/Pods-CSVReader/Pods-CSVReader.release_stage.xcconfig"; sourceTree = "<group>"; };
 		E9FBD7A1362B6EBDB8041505 /* Pods-CSVReaderTests.debug_stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSVReaderTests.debug_stage.xcconfig"; path = "Target Support Files/Pods-CSVReaderTests/Pods-CSVReaderTests.debug_stage.xcconfig"; sourceTree = "<group>"; };
@@ -226,10 +232,9 @@
 		B8FBAE62229ED744002439A1 /* CSVReaderTests */ = {
 			isa = PBXGroup;
 			children = (
-				B8FBAEF422A1447C002439A1 /* Interface */,
+				B8FBAEF422A1447C002439A1 /* Scenes */,
 				B8FBAEF222A143E2002439A1 /* Fixtures */,
 				B8FBAEF322A1446B002439A1 /* Supporting Files */,
-				B8FBAE63229ED744002439A1 /* CSVReaderTests.swift */,
 			);
 			path = CSVReaderTests;
 			sourceTree = "<group>";
@@ -237,9 +242,9 @@
 		B8FBAE73229ED80A002439A1 /* CSVReaderUITests */ = {
 			isa = PBXGroup;
 			children = (
-				B8FBAF1022A15B61002439A1 /* CSVReaderUITests.swift */,
+				B8FBAF1722A15E41002439A1 /* Scenes */,
+				B8FBAF1222A15C7F002439A1 /* Common */,
 				B8FBAEF722A14507002439A1 /* Supporting Files */,
-				B8FBAF0F22A15B60002439A1 /* CSVReaderUITests-Bridging-Header.h */,
 			);
 			path = CSVReaderUITests;
 			sourceTree = "<group>";
@@ -421,6 +426,7 @@
 		B8FBAEF222A143E2002439A1 /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
+				B8FBAF1E22A176CC002439A1 /* XCTestCaseExtensions.swift */,
 				B8FBAEF022A047D1002439A1 /* Test.bundle */,
 			);
 			path = Fixtures;
@@ -434,13 +440,13 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B8FBAEF422A1447C002439A1 /* Interface */ = {
+		B8FBAEF422A1447C002439A1 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
 				B8FBAEF522A14486002439A1 /* List */,
 				B8FBAEF622A1448B002439A1 /* Detail */,
 			);
-			path = Interface;
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		B8FBAEF522A14486002439A1 /* List */ = {
@@ -470,6 +476,7 @@
 		B8FBAEF722A14507002439A1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B8FBAF0F22A15B60002439A1 /* CSVReaderUITests-Bridging-Header.h */,
 				B8FBAE76229ED80A002439A1 /* Info.plist */,
 			);
 			path = "Supporting Files";
@@ -489,6 +496,40 @@
 				B8FBAEFD22A14617002439A1 /* FileDetailMocks.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		B8FBAF1222A15C7F002439A1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B8FBAF1322A15C94002439A1 /* Robot.swift */,
+				B8FBAF1422A15C94002439A1 /* XCTest+KIFTestActor.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B8FBAF1722A15E41002439A1 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B8FBAF1822A15E4A002439A1 /* List */,
+				B8FBAF1922A15E52002439A1 /* Detail */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B8FBAF1822A15E4A002439A1 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				B8FBAF1A22A15E87002439A1 /* FileListViewControllerUITests.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		B8FBAF1922A15E52002439A1 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				B8FBAF1C22A15EA8002439A1 /* FileDetailViewControllerUITests.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		C827E5ED54248DB80BAE96F3 /* Frameworks */ = {
@@ -813,13 +854,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8FBAF0622A14660002439A1 /* FileListPresenterTests.swift in Sources */,
-				B8FBAE64229ED744002439A1 /* CSVReaderTests.swift in Sources */,
 				B8FBAF0C22A14689002439A1 /* FileDetailInteractorTests.swift in Sources */,
 				B8FBAEFE22A14617002439A1 /* FileDetailMocks.swift in Sources */,
 				B8FBAF0B22A14689002439A1 /* FileDetailViewControllerTests.swift in Sources */,
 				B8FBAF0322A14660002439A1 /* FileListViewControllerTests.swift in Sources */,
 				B8FBAF0E22A14689002439A1 /* FileDetailPresenterTests.swift in Sources */,
 				B8FBAF0D22A14689002439A1 /* FileDetailWorkerTests.swift in Sources */,
+				B8FBAF1F22A176CC002439A1 /* XCTestCaseExtensions.swift in Sources */,
 				B8FBAF0422A14660002439A1 /* FileListInteractorTests.swift in Sources */,
 				B8FBAEFA22A1457F002439A1 /* FileListMocks.swift in Sources */,
 				B8FBAF0522A14660002439A1 /* FileListWorkerTests.swift in Sources */,
@@ -830,7 +871,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8FBAF1122A15B61002439A1 /* CSVReaderUITests.swift in Sources */,
+				B8FBAF1522A15C95002439A1 /* Robot.swift in Sources */,
+				B8FBAF1D22A15EA8002439A1 /* FileDetailViewControllerUITests.swift in Sources */,
+				B8FBAF1B22A15E87002439A1 /* FileListViewControllerUITests.swift in Sources */,
+				B8FBAF1622A15C95002439A1 /* XCTest+KIFTestActor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1081,7 +1125,7 @@
 				OTHER_LIBTOOLFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = gz.dev.xdm.CSVReaderUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CSVReaderUITests/CSVReaderUITests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "CSVReaderUITests/Supporting Files/CSVReaderUITests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1107,7 +1151,7 @@
 				OTHER_LIBTOOLFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = gz.dev.xdm.CSVReaderUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CSVReaderUITests/CSVReaderUITests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "CSVReaderUITests/Supporting Files/CSVReaderUITests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleReader.app/SimpleReader";
@@ -1236,7 +1280,7 @@
 				OTHER_LIBTOOLFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = gz.dev.xdm.CSVReaderUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CSVReaderUITests/CSVReaderUITests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "CSVReaderUITests/Supporting Files/CSVReaderUITests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1360,7 +1404,7 @@
 				OTHER_LIBTOOLFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = gz.dev.xdm.CSVReaderUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CSVReaderUITests/CSVReaderUITests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "CSVReaderUITests/Supporting Files/CSVReaderUITests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleReader.app/SimpleReader";

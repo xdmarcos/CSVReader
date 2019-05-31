@@ -91,7 +91,7 @@ extension FileListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
         guard viewModel.datasource[safe: indexPath.row] != nil else { return }
-        prepareForDetsailScreen(selectedIndex: indexPath.row)
+        prepareForDetailScreen(selectedIndex: indexPath.row)
     }
 
     private func configureCell(_ cell: FileListTableViewCell, forIndexPath indexPath: IndexPath) -> UITableViewCell {
@@ -131,7 +131,7 @@ extension FileListViewController: FileListDisplayLogic {
 // MARK: Routing --- Navigate next scene
 extension FileListViewController {
 
-    private func prepareForDetsailScreen(selectedIndex: Int) {
+    func prepareForDetailScreen(selectedIndex: Int) {
 
         router?.navigateToDetailView(index: selectedIndex)
     }

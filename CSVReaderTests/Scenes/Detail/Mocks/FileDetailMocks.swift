@@ -6,7 +6,7 @@
 //
 
 @testable import SimpleReader
-import UIKit
+import XCTest
 
 struct FileDetailMocks {
 
@@ -90,5 +90,120 @@ struct FileDetailMocks {
 
         return FileDetail.Data.Response(title: "Detail Title 3",
                                         data: data)
+    }
+
+    // MARK: Worker
+    class FileDetailWorkerMock: FileDetailWorker {
+
+        override func doGetDataFromFile(file: String) -> [[String]] {
+
+            let fileContent1 = ["name31", "surname31", "31", "3/1/31"]
+            let fileContent2 = ["name32", "surname32", "32", "3/2/32"]
+            let fileContent3 = ["name33", "surname33", "33", "3/3/33"]
+            let data = [fileContent1, fileContent2, fileContent3]
+            return data
+        }
+    }
+
+    class FileDetailWorkerEmptyMock: FileDetailWorker {
+
+        override func doGetDataFromFile(file: String) -> [[String]] {
+
+            return []
+        }
+    }
+
+    // MARK: LoadFileDataWorker
+    class DetailDataWorker: LoadFileDataWorkerAlias {
+
+        func dataFromLile(file: String) -> [[String]] {
+
+            let fileContent1 = ["name31", "surname31", "31", "3/1/31"]
+            let fileContent2 = ["name32", "surname32", "32", "3/2/32"]
+            let fileContent3 = ["name33", "surname33", "33", "3/3/33"]
+            let data = [fileContent1, fileContent2, fileContent3]
+            return data
+        }
+    }
+
+    class DetailDataWorkerEmpty: LoadFileDataWorkerAlias {
+
+        func dataFromLile(file: String) -> [[String]] {
+
+            return []
+        }
+    }
+}
+
+class FileDetailFixtures: XCTestCase {
+
+    func fileComplete() -> [[String]] {
+
+        let files = loadFixturesContents()
+        let path = files.filter { (filepath) -> Bool in
+
+            guard let fileURL = URL(string: filepath) else { return false }
+            return fileURL.lastPathComponent == "issues.csv"
+        }
+
+        guard let file = path.first else { return [] }
+
+        return loadFixtureFileData(fromFile: file)
+    }
+
+    func fileMoreColumns() -> [[String]] {
+
+        let files = loadFixturesContents()
+        let path = files.filter { (filepath) -> Bool in
+
+            guard let fileURL = URL(string: filepath) else { return false }
+            return fileURL.lastPathComponent == "issues_more_columns.csv"
+        }
+
+        guard let file = path.first else { return [] }
+
+        return loadFixtureFileData(fromFile: file)
+    }
+
+    func fileLessColumns() -> [[String]] {
+
+        let files = loadFixturesContents()
+        let path = files.filter { (filepath) -> Bool in
+
+            guard let fileURL = URL(string: filepath) else { return false }
+            return fileURL.lastPathComponent == "issues_less_columns.csv"
+        }
+
+        guard let file = path.first else { return [] }
+
+        return loadFixtureFileData(fromFile: file)
+    }
+
+    func fileHeaderOnly() -> [[String]] {
+
+        let files = loadFixturesContents()
+        let path = files.filter { (filepath) -> Bool in
+
+            guard let fileURL = URL(string: filepath) else { return false }
+            return fileURL.lastPathComponent == "issues_header_only.csv"
+        }
+
+        guard let file = path.first else { return [] }
+
+        return loadFixtureFileData(fromFile: file)
+    }
+
+    func fileEmpty() -> [[String]] {
+
+        let files = loadFixturesContents()
+        let path = files.filter { (filepath) -> Bool in
+
+            guard let fileURL = URL(string: filepath) else { return false }
+            return fileURL.lastPathComponent == "issues_empty.csv"
+        }
+
+        guard let file = path.first else { return [] }
+
+        return loadFixtureFileData(fromFile: file)
     }
 }

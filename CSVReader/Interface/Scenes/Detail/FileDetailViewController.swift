@@ -158,6 +158,7 @@ extension FileDetailViewController: FileDetailDisplayLogic {
 extension FileDetailViewController {
 
     func prepareForGoBack() {
+        
         router?.navigateBack()
     }
 }

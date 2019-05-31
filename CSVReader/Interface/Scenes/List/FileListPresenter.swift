@@ -46,8 +46,9 @@ extension FileListPresenter {
             return File(name: "", type: "", path: "")
         }
 
-        let name = fileURL.deletingPathExtension().lastPathComponent
         let type = fileURL.pathExtension
+        var name = fileURL.deletingPathExtension().lastPathComponent
+        name = type.isEmpty ? "" : name
         let path = fileURL.absoluteString
 
         return File(name: name,

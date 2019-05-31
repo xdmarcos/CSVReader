@@ -1,6 +1,6 @@
 //
 //  FileListInteractorTests.swift
-//  CSVReader
+//  CSVReaderTests
 //
 //  Created by Marcos Gonzalez on 2019.
 //
@@ -57,5 +57,35 @@ class FileListInteractorTests: XCTestCase {
 
         // Then
         XCTAssertTrue(spy.presentFileListCalled, "tryRetrieveFileList(request:) should ask the presenter to format the result")
+    }
+
+    func testRetriveFileList() {
+
+        // Given
+        let workerMock = FileListMocks.FileListWorkerMock()
+        sut.worker = workerMock
+        let request = FileList.Retrieve.Request()
+
+        // When
+        sut.tryRetrieveFileList(request: request)
+        
+        // Then
+        XCTAssertNotNil(sut.filesList, "File list shouldn't be nil")
+        XCTAssert(sut.filesList.isEmpty == false, "The list must contain files")
+    }
+
+    func testRetriveFileEmptyList() {
+
+        // Given
+        let workerMock = FileListMocks.FileListWorkerEmptyMock()
+        sut.worker = workerMock
+        let request = FileList.Retrieve.Request()
+
+        // When
+        sut.tryRetrieveFileList(request: request)
+
+        // Then
+        XCTAssertNotNil(sut.filesList, "File list shouldn't be nil")
+        XCTAssert(sut.filesList.isEmpty == true, "The list must be empty")
     }
 }

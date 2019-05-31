@@ -1,6 +1,6 @@
 //
 //  FileDetailInteractorTests.swift
-//  CSVReader
+//  CSVReaderTests
 //
 //  Created by Marcos Gonzalez on 2019.
 //
@@ -57,5 +57,35 @@ class FileDetailInteractorTests: XCTestCase {
 
         // Then
         XCTAssertTrue(spy.presentFileDataCalled, "tryGetFileData(request:) should ask the presenter to format the result")
+    }
+
+    func testGetFileData() {
+
+        // Given
+        let workerMock = FileDetailMocks.FileDetailWorkerMock()
+        sut.worker = workerMock
+        let request = FileDetail.Data.Request()
+
+        // When
+        sut.tryGetFileData(request: request)
+
+        // Then
+        XCTAssertNotNil(sut.resultingData, "Data list shouldn't be nil")
+        XCTAssert(sut.resultingData.isEmpty == false, "The list must contain data")
+    }
+
+    func testGetFileDataEmpty() {
+
+        // Given
+        let workerMock = FileDetailMocks.FileDetailWorkerEmptyMock()
+        sut.worker = workerMock
+        let request = FileDetail.Data.Request()
+
+        // When
+        sut.tryGetFileData(request: request)
+
+        // Then
+        XCTAssertNotNil(sut.resultingData, "Data list shouldn't be nil")
+        XCTAssert(sut.resultingData.isEmpty == true, "The list must contain data")
     }
 }

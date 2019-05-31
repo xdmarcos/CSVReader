@@ -1,6 +1,6 @@
 //
 //  FileDetailViewControllerTests.swift
-//  CSVReader
+//  CSVReaderTests
 //
 //  Created by Marcos Gonzalez on 2019.
 //
@@ -47,6 +47,16 @@ class FileDetailViewControllerTests: XCTestCase {
         func tryGetFileData(request: FileDetail.Data.Request) {
 
             tryGetFileDataCalled = true
+        }
+    }
+
+    class FileDetailRoutingLogicSpy: FileDetailRoutingLogic & FileDetailDataPassing {
+
+        var dataStore: FileDetailDataStore?
+        var navigateBackCalled = false
+
+        func navigateBack() {
+            navigateBackCalled = true
         }
     }
 
@@ -118,5 +128,19 @@ class FileDetailViewControllerTests: XCTestCase {
         
         // Then
         XCTAssertEqual(sut.sceneView.tableView.numberOfSections, expectedSections, "displayFileData(viewModel:) should update the number of sections")
+    }
+
+    func testNavigateBackSpy() {
+
+        // Given
+        let spy = FileDetailRoutingLogicSpy()
+        sut.router = spy
+
+        // When
+        loadView()
+        sut.goBack()
+
+        // Then
+        XCTAssertTrue(spy.navigateBackCalled, "prepareForGoBack() should ask the router to navigate to next scene.")
     }
 }

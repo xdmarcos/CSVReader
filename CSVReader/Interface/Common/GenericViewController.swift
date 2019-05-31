@@ -22,11 +22,4 @@ class GenericViewController: UIViewController {
 
         super.viewWillAppear(animated)
     }
-
-    override func didReceiveMemoryWarning() {
-
-        super.didReceiveMemoryWarning()
-
-        DLog("Handle memory warning properly")
-    }
 }

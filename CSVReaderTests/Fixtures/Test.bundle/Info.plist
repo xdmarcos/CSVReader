@@ -3,6 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIdentifier</key>
-	<string>gz.dev.xdm.bundle.stage</string>
+	<string>gz.dev.xdm.bundle.test</string>
 </dict>
 </plist>

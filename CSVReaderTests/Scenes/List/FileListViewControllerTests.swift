@@ -1,6 +1,6 @@
 //
 //  FileListViewControllerTests.swift
-//  CSVReader
+//  CSVReaderTests
 //
 //  Created by Marcos Gonzalez on 2019.
 //
@@ -47,6 +47,18 @@ class FileListViewControllerTests: XCTestCase {
         func tryRetrieveFileList(request: FileList.Retrieve.Request) {
 
             tryRetrieveFileListCalled = true
+        }
+    }
+
+    class FileListRoutingLogicSpy: FileListRoutingLogic & FileListDataPassing {
+
+        var dataStore: FileListDataStore?
+
+        var navigateToDetailViewCalled = false
+
+        func navigateToDetailView(index: Int) {
+
+            navigateToDetailViewCalled = true
         }
     }
 
@@ -118,5 +130,20 @@ class FileListViewControllerTests: XCTestCase {
 
         // Then
         XCTAssertEqual(sut.sceneView.tableView.numberOfRows(inSection: 0), expectedRows, "displayFileList(viewModel:) should update the tableView number of rows")
+    }
+
+    func testNavigateToDetailScreenSpy() {
+
+        // Given
+        let spy = FileListRoutingLogicSpy()
+        sut.router = spy
+        let selectedIndex = 0
+        
+        // When
+        loadView()
+        sut.prepareForDetailScreen(selectedIndex: selectedIndex)
+
+        // Then
+        XCTAssertTrue(spy.navigateToDetailViewCalled, "prepareForDetailScreen() should ask the router to navigate to next scene.")
     }
 }
