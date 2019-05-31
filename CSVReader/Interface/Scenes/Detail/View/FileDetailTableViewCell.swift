@@ -27,7 +27,7 @@ class FileDetailTableViewCell: UITableViewCell {
 
     enum Accessibility {
 
-        struct Label {
+        struct Identifier {
             static var nameLabel = "nameLabel"
             static var nameValueLabel = "nameValueLabel"
             static var surnameLabel = "surnameLabel"
@@ -54,49 +54,49 @@ class FileDetailTableViewCell: UITableViewCell {
         nameLabel = UILabel()
         nameLabel.font = UIFont.appBoldFont(ofSize: ViewTraits.fontMedium)
         nameLabel.textColor = .appWhite
-        nameLabel.accessibilityIdentifier = Accessibility.Label.nameLabel
+        nameLabel.accessibilityIdentifier = Accessibility.Identifier.nameLabel
 
         //nameValueLabel
         nameValueLabel = UILabel()
         nameValueLabel.font = UIFont.appFont(ofSize: ViewTraits.fontMedium)
         nameValueLabel.textColor = .appLightGray
-        nameValueLabel.accessibilityIdentifier = Accessibility.Label.nameLabel
+        nameValueLabel.accessibilityIdentifier = Accessibility.Identifier.nameLabel
 
         //surnameLabel
         surnameLabel = UILabel()
         surnameLabel.font = UIFont.appBoldFont(ofSize: ViewTraits.fontMedium)
         surnameLabel.textColor = .appWhite
-        surnameLabel.accessibilityIdentifier = Accessibility.Label.nameLabel
+        surnameLabel.accessibilityIdentifier = Accessibility.Identifier.nameLabel
 
         //surnameValueLabel
         surnameValueLabel = UILabel()
         surnameValueLabel.font = UIFont.appFont(ofSize: ViewTraits.fontMedium)
         surnameValueLabel.textColor = .appLightGray
-        surnameValueLabel.accessibilityIdentifier = Accessibility.Label.nameLabel
+        surnameValueLabel.accessibilityIdentifier = Accessibility.Identifier.nameLabel
 
         //countLabel
         countLabel = UILabel()
         countLabel.font = UIFont.appBoldFont(ofSize: ViewTraits.fontMedium)
         countLabel.textColor = .appWhite
-        countLabel.accessibilityIdentifier = Accessibility.Label.nameLabel
+        countLabel.accessibilityIdentifier = Accessibility.Identifier.nameLabel
 
         //countValueLabel
         countValueLabel = UILabel()
         countValueLabel.font = UIFont.appFont(ofSize: ViewTraits.fontMedium)
         countValueLabel.textColor = .appLightGray
-        countValueLabel.accessibilityIdentifier = Accessibility.Label.nameLabel
+        countValueLabel.accessibilityIdentifier = Accessibility.Identifier.nameLabel
 
         //dobLabel
         dobLabel = UILabel()
         dobLabel.font = UIFont.appBoldFont(ofSize: ViewTraits.fontMedium)
         dobLabel.textColor = .appWhite
-        dobLabel.accessibilityIdentifier = Accessibility.Label.nameLabel
+        dobLabel.accessibilityIdentifier = Accessibility.Identifier.nameLabel
 
         //dobValueLabel
         dobValueLabel = UILabel()
         dobValueLabel.font = UIFont.appFont(ofSize: ViewTraits.fontMedium)
         dobValueLabel.textColor = .appLightGray
-        dobValueLabel.accessibilityIdentifier = Accessibility.Label.nameLabel
+        dobValueLabel.accessibilityIdentifier = Accessibility.Identifier.nameLabel
 
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 

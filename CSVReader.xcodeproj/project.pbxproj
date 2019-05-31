@@ -14,6 +14,8 @@
 		B80472DB22A191F500452566 /* LoadFileDataWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80472DA22A191F500452566 /* LoadFileDataWorkerTests.swift */; };
 		B80472E022A192F500452566 /* LoadWorkerMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80472DF22A192F500452566 /* LoadWorkerMocks.swift */; };
 		B80472E322A1979800452566 /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80472E222A1979800452566 /* ExtensionsTests.swift */; };
+		B80472E722A19A5B00452566 /* FileListMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80472E622A19A5B00452566 /* FileListMocks.swift */; };
+		B80472E922A19A6E00452566 /* FileDetailMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80472E822A19A6E00452566 /* FileDetailMocks.swift */; };
 		B8FBAE4F229ED742002439A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAE4E229ED742002439A1 /* AppDelegate.swift */; };
 		B8FBAE56229ED744002439A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8FBAE55229ED744002439A1 /* Assets.xcassets */; };
 		B8FBAE59229ED744002439A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8FBAE57229ED744002439A1 /* LaunchScreen.storyboard */; };
@@ -105,6 +107,8 @@
 		B80472DA22A191F500452566 /* LoadFileDataWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFileDataWorkerTests.swift; sourceTree = "<group>"; };
 		B80472DF22A192F500452566 /* LoadWorkerMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadWorkerMocks.swift; sourceTree = "<group>"; };
 		B80472E222A1979800452566 /* ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsTests.swift; sourceTree = "<group>"; };
+		B80472E622A19A5B00452566 /* FileListMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListMocks.swift; sourceTree = "<group>"; };
+		B80472E822A19A6E00452566 /* FileDetailMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDetailMocks.swift; sourceTree = "<group>"; };
 		B8FBAE4B229ED742002439A1 /* SimpleReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8FBAE4E229ED742002439A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8FBAE55229ED744002439A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -229,6 +233,22 @@
 				B80472E222A1979800452566 /* ExtensionsTests.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B80472E422A19A3900452566 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B80472E622A19A5B00452566 /* FileListMocks.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		B80472E522A19A4100452566 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B80472E822A19A6E00452566 /* FileDetailMocks.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		B8FBAE42229ED742002439A1 = {
@@ -555,6 +575,7 @@
 		B8FBAF1822A15E4A002439A1 /* List */ = {
 			isa = PBXGroup;
 			children = (
+				B80472E422A19A3900452566 /* Mocks */,
 				B8FBAF1A22A15E87002439A1 /* FileListViewControllerUITests.swift */,
 			);
 			path = List;
@@ -563,6 +584,7 @@
 		B8FBAF1922A15E52002439A1 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				B80472E522A19A4100452566 /* Mocks */,
 				B8FBAF1C22A15EA8002439A1 /* FileDetailViewControllerUITests.swift */,
 			);
 			path = Detail;
@@ -913,7 +935,9 @@
 			files = (
 				B8FBAF1522A15C95002439A1 /* Robot.swift in Sources */,
 				B8FBAF1D22A15EA8002439A1 /* FileDetailViewControllerUITests.swift in Sources */,
+				B80472E722A19A5B00452566 /* FileListMocks.swift in Sources */,
 				B8FBAF1B22A15E87002439A1 /* FileListViewControllerUITests.swift in Sources */,
+				B80472E922A19A6E00452566 /* FileDetailMocks.swift in Sources */,
 				B8FBAF1622A15C95002439A1 /* XCTest+KIFTestActor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

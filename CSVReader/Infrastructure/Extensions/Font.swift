@@ -38,15 +38,4 @@ extension UIFont {
         let scaledFont = UIFontMetrics.default.scaledFont(for: font)
         return scaledFont
     }
-
-    // Util to print installed fonts
-
-    class func printFamilyNames() {
-        for family: String in UIFont.familyNames {
-            print("\(family)")
-            for names: String in UIFont.fontNames(forFamilyName: family) {
-                print("== \(names)")
-            }
-        }
-    }
 }

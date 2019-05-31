@@ -19,8 +19,9 @@ class FileListView: UIView {
 
     enum Accessibility {
 
-        struct Label {
-            static var tableView = "listTableView"
+        struct Identifier {
+            static let rootView = "fileListView"
+            static let tableView = "listTableView"
         }
     }
 
@@ -39,13 +40,14 @@ class FileListView: UIView {
         tableView.showsVerticalScrollIndicator = false
         tableView.showsHorizontalScrollIndicator = false
         tableView.contentInset = ViewTraits.tableContentInset
-        tableView.accessibilityIdentifier = Accessibility.Label.tableView
+        tableView.accessibilityIdentifier = Accessibility.Identifier.tableView
 
         // Init
         super.init(frame: frame)
 
         backgroundColor = .appBlack
-
+        accessibilityIdentifier = Accessibility.Identifier.rootView
+        
         // Add subviews
         addSubviewForAutolayout(subview: tableView)
 

@@ -32,7 +32,7 @@ class FileListTableViewCell: UITableViewCell {
 
     enum Accessibility {
 
-        struct Label {
+        struct Identifier {
             static var titleLabel = "titleLabel"
             static var symbolLabel = "symbolLabel"
             static var pathLabel = "valueLabel"
@@ -52,13 +52,13 @@ class FileListTableViewCell: UITableViewCell {
         symbolLabel.textColor = .appDarkGray
         symbolLabel.backgroundColor = .appWhite
         symbolLabel.textAlignment = .center
-        symbolLabel.accessibilityIdentifier = Accessibility.Label.symbolLabel
+        symbolLabel.accessibilityIdentifier = Accessibility.Identifier.symbolLabel
 
         //titleLabel
         titleLabel = UILabel()
         titleLabel.font = UIFont.appBoldFont(ofSize: ViewTraits.fontMedium)
         titleLabel.textColor = .appWhite
-        titleLabel.accessibilityIdentifier = Accessibility.Label.titleLabel
+        titleLabel.accessibilityIdentifier = Accessibility.Identifier.titleLabel
 
         //pathLabel
         pathLabel = UILabel()
@@ -67,7 +67,7 @@ class FileListTableViewCell: UITableViewCell {
         pathLabel.textAlignment = .left
         pathLabel.lineBreakMode = .byTruncatingHead
         pathLabel.numberOfLines = ViewTraits.numberOfLines
-        pathLabel.accessibilityIdentifier = Accessibility.Label.pathLabel
+        pathLabel.accessibilityIdentifier = Accessibility.Identifier.pathLabel
 
         //separatorView
         separatorView = UIView()

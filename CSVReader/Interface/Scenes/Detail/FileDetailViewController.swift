@@ -55,6 +55,14 @@ class FileDetailViewController: GenericViewController {
         view = sceneView
     }
 
+    enum Accessibility {
+
+        struct Identifier {
+
+            static var backButton = "detailBackButton"
+        }
+    }
+
     override func viewDidLoad() {
 
         super.viewDidLoad()
@@ -63,6 +71,7 @@ class FileDetailViewController: GenericViewController {
                                          style: .plain,
                                          target: self,
                                          action: #selector(goBack))
+        backButton.accessibilityIdentifier = Accessibility.Identifier.backButton
         navigationItem.leftBarButtonItem = backButton
         
         sceneView.tableView.delegate = self

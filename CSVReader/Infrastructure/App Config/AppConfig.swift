@@ -6,6 +6,7 @@
 //
 
 public struct AppConfig {
+    
     #if CONF_STAGE
     static let bundleName = "Stage"
     #else
