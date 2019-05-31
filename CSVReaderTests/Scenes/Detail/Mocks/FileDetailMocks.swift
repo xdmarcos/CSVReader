@@ -10,6 +10,9 @@ import XCTest
 
 struct FileDetailMocks {
 
+    static let filePath = "Library/Developer/CoreSimulator/Devices/data/Containers/Bundle/Application/SimpleReader.app/issues.csv"
+    static let filePathEmpty = ""
+
     static func detail0FilesViewModel() -> FileDetail.Data.ViewModel {
 
         let headers = ["name", "surname", "count", "dob"]
@@ -165,13 +168,25 @@ class FileDetailFixtures: XCTestCase {
         return loadFixtureFileData(fromFile: file)
     }
 
-    func fileLessColumns() -> [[String]] {
+    func fileLessColumns(number: Int) -> [[String]] {
+
+        var filename = "issues_less_columns_"
+        switch number {
+        case 1:
+            filename += "1.csv"
+        case 2:
+            filename += "2.csv"
+        case 3:
+            filename += "3.csv"
+        default:
+            break
+        }
 
         let files = loadFixturesContents()
         let path = files.filter { (filepath) -> Bool in
 
             guard let fileURL = URL(string: filepath) else { return false }
-            return fileURL.lastPathComponent == "issues_less_columns.csv"
+            return fileURL.lastPathComponent == filename
         }
 
         guard let file = path.first else { return [] }
