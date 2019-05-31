@@ -9,12 +9,12 @@ import UIKit
 
 protocol LoadFileDataWorkerAlias {
 
-    func dataFromLile(file: String) -> [[String]]
+    func dataFromFile(file: String) -> [[String]]
 }
 
 class LoadFileDataWorker: LoadFileDataWorkerAlias {
 
-    func dataFromLile(file: String) -> [[String]] {
+    func dataFromFile(file: String) -> [[String]] {
 
         let data = readDataFromCSV(fileName: file)
         var result = [[String]]()

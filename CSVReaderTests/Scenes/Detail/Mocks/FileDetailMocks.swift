@@ -119,7 +119,7 @@ struct FileDetailMocks {
     // MARK: LoadFileDataWorker
     class DetailDataWorker: LoadFileDataWorkerAlias {
 
-        func dataFromLile(file: String) -> [[String]] {
+        func dataFromFile(file: String) -> [[String]] {
 
             let fileContent1 = ["name31", "surname31", "31", "3/1/31"]
             let fileContent2 = ["name32", "surname32", "32", "3/2/32"]
@@ -131,7 +131,7 @@ struct FileDetailMocks {
 
     class DetailDataWorkerEmpty: LoadFileDataWorkerAlias {
 
-        func dataFromLile(file: String) -> [[String]] {
+        func dataFromFile(file: String) -> [[String]] {
 
             return []
         }

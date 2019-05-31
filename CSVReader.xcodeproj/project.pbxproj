@@ -11,6 +11,9 @@
 		30B3AB0A6E9BFE79611CD665 /* Pods_CSVReaderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7553B79DC694E9B91E81B53 /* Pods_CSVReaderTests.framework */; };
 		B257CA0000057A287BF8926A /* Pods_CSVReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82188BF129C8F7AD7A7BB87 /* Pods_CSVReader.framework */; };
 		B80472D922A18E2900452566 /* LoadFileListWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80472D822A18E2900452566 /* LoadFileListWorkerTests.swift */; };
+		B80472DB22A191F500452566 /* LoadFileDataWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80472DA22A191F500452566 /* LoadFileDataWorkerTests.swift */; };
+		B80472E022A192F500452566 /* LoadWorkerMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80472DF22A192F500452566 /* LoadWorkerMocks.swift */; };
+		B80472E322A1979800452566 /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80472E222A1979800452566 /* ExtensionsTests.swift */; };
 		B8FBAE4F229ED742002439A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBAE4E229ED742002439A1 /* AppDelegate.swift */; };
 		B8FBAE56229ED744002439A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8FBAE55229ED744002439A1 /* Assets.xcassets */; };
 		B8FBAE59229ED744002439A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8FBAE57229ED744002439A1 /* LaunchScreen.storyboard */; };
@@ -99,6 +102,9 @@
 		AF5D798368BD1F188B7E4A35 /* Pods-CSVReader.debug_prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSVReader.debug_prod.xcconfig"; path = "Target Support Files/Pods-CSVReader/Pods-CSVReader.debug_prod.xcconfig"; sourceTree = "<group>"; };
 		B7553B79DC694E9B91E81B53 /* Pods_CSVReaderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSVReaderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B80472D822A18E2900452566 /* LoadFileListWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFileListWorkerTests.swift; sourceTree = "<group>"; };
+		B80472DA22A191F500452566 /* LoadFileDataWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFileDataWorkerTests.swift; sourceTree = "<group>"; };
+		B80472DF22A192F500452566 /* LoadWorkerMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadWorkerMocks.swift; sourceTree = "<group>"; };
+		B80472E222A1979800452566 /* ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsTests.swift; sourceTree = "<group>"; };
 		B8FBAE4B229ED742002439A1 /* SimpleReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8FBAE4E229ED742002439A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8FBAE55229ED744002439A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -202,9 +208,27 @@
 		B80472D722A18E0000452566 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				B80472DE22A192C600452566 /* Mocks */,
 				B80472D822A18E2900452566 /* LoadFileListWorkerTests.swift */,
+				B80472DA22A191F500452566 /* LoadFileDataWorkerTests.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		B80472DE22A192C600452566 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B80472DF22A192F500452566 /* LoadWorkerMocks.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		B80472E122A1977200452566 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B80472E222A1979800452566 /* ExtensionsTests.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		B8FBAE42229ED742002439A1 = {
@@ -242,6 +266,7 @@
 		B8FBAE62229ED744002439A1 /* CSVReaderTests */ = {
 			isa = PBXGroup;
 			children = (
+				B80472E122A1977200452566 /* Extensions */,
 				B80472D722A18E0000452566 /* Core */,
 				B8FBAEF422A1447C002439A1 /* Scenes */,
 				B8FBAEF222A143E2002439A1 /* Fixtures */,
@@ -868,10 +893,13 @@
 				B80472D922A18E2900452566 /* LoadFileListWorkerTests.swift in Sources */,
 				B8FBAF0C22A14689002439A1 /* FileDetailInteractorTests.swift in Sources */,
 				B8FBAEFE22A14617002439A1 /* FileDetailMocks.swift in Sources */,
+				B80472DB22A191F500452566 /* LoadFileDataWorkerTests.swift in Sources */,
+				B80472E022A192F500452566 /* LoadWorkerMocks.swift in Sources */,
 				B8FBAF0B22A14689002439A1 /* FileDetailViewControllerTests.swift in Sources */,
 				B8FBAF0322A14660002439A1 /* FileListViewControllerTests.swift in Sources */,
 				B8FBAF0E22A14689002439A1 /* FileDetailPresenterTests.swift in Sources */,
 				B8FBAF0D22A14689002439A1 /* FileDetailWorkerTests.swift in Sources */,
+				B80472E322A1979800452566 /* ExtensionsTests.swift in Sources */,
 				B8FBAF1F22A176CC002439A1 /* XCTestCaseExtensions.swift in Sources */,
 				B8FBAF0422A14660002439A1 /* FileListInteractorTests.swift in Sources */,
 				B8FBAEFA22A1457F002439A1 /* FileListMocks.swift in Sources */,

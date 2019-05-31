@@ -11,6 +11,6 @@ class FileDetailWorker {
 
     func doGetDataFromFile(file: String) -> [[String]] {
 
-        return dataWorker.dataFromLile(file: file)
+        return dataWorker.dataFromFile(file: file)
     }
 }
